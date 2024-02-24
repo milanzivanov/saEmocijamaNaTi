@@ -1,0 +1,12 @@
+//
+button {
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+  border-radius: 2rem;
+  cursor: pointer;
+  color: var(--btn-color);
+  background-color: var(--main-color);
+  border: 2px solid var(--btn-color);
+}

@@ -1,0 +1,51 @@
+.h2-heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  font-weight: 700;
+  color: var(--brand-color);
+  text-align: center;
+}
+
+.h2-heading--pb {
+  padding-bottom: 5rem;
+}
+
+.h3-heading {
+  font-size: 1.6rem;
+  color: var(--brand-color);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.h3-heading--pb {
+  padding-bottom: 1.5rem;
+}
+
+.h4-heading {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  justify-content: flex-end;
+}
+
+.h4-heading--bold {
+  font-weight: 500;
+  color: var(--brand-color);
+}
+
+.h5-heading {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+.defoult-text--pb {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.defoult-text--pt {
+  padding-top: 1rem;
+}

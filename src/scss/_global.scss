@@ -1,0 +1,25 @@
+html {
+  font-size: 112.5%; /*18px / 16px = 1.125px * 100 = 112.5% */
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--headerHeight);
+}
+body {
+  font-family: var(--secondery-font-family);
+  font-weight: 400;
+  background: var(--main-color);
+  color: var(--main-text-color);
+  line-height: 1.4;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}

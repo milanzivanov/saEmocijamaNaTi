@@ -1,0 +1,46 @@
+.header {
+  width: 100%;
+  position: relative;
+  background: var(--hero-gradient-background);
+}
+
+.header.sticky {
+  position: fixed;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 1px 1px 3px #ddd;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+
+  overflow: hidden;
+  border-bottom-left-radius: var(--border-radius-base);
+  border-bottom-right-radius: var(--border-radius-base);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  color: var(--main-text-color);
+}
+
+.nav-list__link {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--main-text-color);
+  padding-right: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    color: var(--main-color);
+  }
+}

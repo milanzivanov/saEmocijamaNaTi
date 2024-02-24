@@ -1,0 +1,17 @@
+.footer {
+  background-color: var(--main-light-grey);
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+
+  span {
+    color: var(--brand-color);
+  }
+
+  a {
+    color: var(--brand-color);
+    text-decoration: none;
+  }
+}
