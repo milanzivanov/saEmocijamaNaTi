@@ -54,10 +54,11 @@ h1.hero-container__title {
 
 .main__title--block {
   display: block;
-  background: var(--hero-gradient-background);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+  // background: var(--hero-gradient-background);
+  // -webkit-text-fill-color: transparent;
+  // -webkit-background-clip: text;
+  // background-clip: text;
+  color: var(--brand-color);
 }
 
 // about
@@ -132,6 +133,7 @@ h1.hero-container__title {
 ////////////////////
 // BTT
 .back-to-top-container {
+  position: relative;
   cursor: pointer;
   display: none;
   background-color: var(--main-light-grey);
@@ -147,6 +149,7 @@ h1.hero-container__title {
 }
 
 .svg-icon {
+  position: relative;
   height: 2.5rem;
   width: 2.5rem;
   display: flex;
@@ -156,12 +159,15 @@ h1.hero-container__title {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 500;
+  stroke: var(--brand-color);
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
 }
 .back-to-top-container:hover {
   background-color: var(--brand-color);
 
   .svg-icon {
-    color: var(--white-color);
-    bottom: 10px;
+    stroke: var(--white-color);
+    bottom: 3px;
   }
 }
