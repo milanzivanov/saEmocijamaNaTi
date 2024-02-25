@@ -4,27 +4,39 @@ import "../scss/style.scss";
 function setHeaderHeight() {
   const headerHeight = document.querySelector(".header");
   const root = document.querySelector(":root");
-  // const root = document.documentElement;
 
-  console.log(headerHeight.offsetHeight);
-  // root.style.setProperty(
-  //   "--headerHeight",
-  //   `${headerHeight.offsetHeight * 1.5}px`
-  // );
   root.style.setProperty("--headerHeight", `${headerHeight.offsetHeight}px`);
 }
 
 window.addEventListener("resize", setHeaderHeight);
 window.addEventListener("DOMContentLoaded", setHeaderHeight);
 
+// test
+// var links = document.querySelectorAll(".nav-list .nav-list__link");
+// links.forEach((link) => (link.style.color = "red"));
+
+////////////
+// mobile menu
+let toggleBtn = document.querySelector(".nav-container__btn");
+let mobileNavigation = document.querySelector(".nav-container-mobile");
+// let backdrop = document.querySelector(".nav-backdrop-container");
+
+toggleBtn.addEventListener("click", function () {
+  toggleBtn.classList.add("active");
+  mobileNavigation.classList.add("active");
+});
+
+mobileNavigation.addEventListener("click", function () {
+  toggleBtn.classList.remove("active");
+  mobileNavigation.classList.remove("active");
+});
+
 /////////////////////////////////
 // Remove active state from mobile menu with key escape
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
-    document
-      .querySelector(".nav-backdrop-container")
-      .classList.remove("active");
-    document.querySelector(".nav-toggle-btn").classList.remove("active");
+    document.querySelector(".nav-container-mobile").classList.remove("active");
+    // document.querySelector(".nav-toggle-btn").classList.remove("active");
   }
 });
 

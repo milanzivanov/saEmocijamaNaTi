@@ -1,3 +1,7 @@
+.main {
+  position: relative;
+}
+
 .hero {
   position: relative;
 }
@@ -106,9 +110,8 @@ h1.hero-container__title {
   padding: 1rem;
   flex: 1 1 60%;
 
-  p {
-    padding-bottom: 3rem;
-  }
+  display: flex;
+  flex-direction: column;
 }
 
 .item-container--img {
@@ -122,6 +125,13 @@ h1.hero-container__title {
   align-items: center;
   background-color: var(--main-light-grey);
   padding: 5rem;
+}
+
+.wrapper.contact__container {
+  background-color: var(--white-color);
+  padding: 1rem;
+  border-radius: var(--border-radius-base);
+  overflow: hidden;
 }
 
 .contact--link {
@@ -148,21 +158,6 @@ h1.hero-container__title {
   transition: all 0.3s ease-in-out;
 }
 
-.svg-icon {
-  position: relative;
-  height: 2.5rem;
-  width: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 500;
-  stroke: var(--brand-color);
-  bottom: 0;
-  transition: all 0.3s ease-in-out;
-}
 .back-to-top-container:hover {
   background-color: var(--brand-color);
 

@@ -26,6 +26,22 @@
               </li>
             </ul>
           </nav>
+          <div class="nav-container__btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="svg-icon svg-icon--nav"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
         </div>
       </header>
 
@@ -47,6 +63,24 @@
           </div>
         </div>
       </section>
+
+      <!-- mobile navigation -->
+      <div class="nav-container-mobile">
+        <nav class="nav-container-mobile__content">
+          <ul class="nav-container-mobile__list">
+            <li><a class="nav-container-mobile__link" href="#home">home</a></li>
+            <li>
+              <a class="nav-container-mobile__link" href="#about">o nama</a>
+            </li>
+            <li>
+              <a class="nav-container-mobile__link" href="#program">program</a>
+            </li>
+            <li>
+              <a class="nav-container-mobile__link" href="#contact">kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </main>
 
     <section class="about section" id="about">
@@ -57,14 +91,14 @@
             <img src="./src/img/mpCroped.png" alt="main picture" />
           </div>
           <div class="about-container__item about-container__item--text">
-            <h3 class="h3-heading h3-heading--pb">marina perežanin</h3>
-            <p class="defoult-text defoult-text--pb">
+            <h3 class="h3-heading">marina perežanin</h3>
+            <p class="defoult-text defoult-text--about defoult-text--bb">
               Program emocionalnog opismenjavanja namenjen mladima i onima koji
               se tako osećaju sa namerom i ciljem da razbistrimo neke slike,
               složimo kockice u glavi, upoznamo se i pomirimo sa svojim
               osećanjima te živimo život u svoj njegovoj punoći i lepoti.
             </p>
-            <p class="defoult-text defoult-text--pt">
+            <p class="defoult-text defoult-text--about">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
               optio sunt rerum, adipisci enim asperiores recusandae assumenda
               cupiditate natus odit, excepturi, esse praesentium et non. Eius
@@ -87,18 +121,18 @@
                 <img src="./src/img/mind.jpg" alt="for the moment" />
               </div>
               <div class="item-container--text">
-                <h3 class="h3-heading h3-heading--pb">Pojedinačne Radionice</h3>
-                <p class="defoult-text">
+                <h3 class="h3-heading">Pojedinačne Radionice</h3>
+                <p class="defoult-text defoult-text--bb">
                   Program emocionalnog opismenjavanja namenjen mladima i onima
                   koji se tako osećaju sa namerom i ciljem da razbistrimo neke
                   slike, složimo kockice u glavi, upoznamo se i pomirimo sa
                   svojim osećanjima te živimo život u svoj njegovoj punoći i
                   lepoti.
                 </p>
-                <h4 class="h4-heading h4-heading--pb">
+                <h5 class="h5-heading">dinamika</h5>
+                <h4 class="h4-heading">
                   cena: <span class="h4-heading--bold">&nbsp;5000rsd.</span>
                 </h4>
-                <!-- <h5 class="h5-heading">dinamika</h5> -->
               </div>
             </div>
           </div>
@@ -108,8 +142,8 @@
                 <img src="./src/img/mind.jpg" alt="" />
               </div>
               <div class="item-container--text">
-                <h3 class="h3-heading h3-heading--pb">Sa Emocijama na Ti</h3>
-                <p class="defoult-text">
+                <h3 class="h3-heading">Sa Emocijama na Ti</h3>
+                <p class="defoult-text defoult-text--bb">
                   Ponekad lutamo kroz lavirint emocija, izgubljeni u
                   nesigurnosti. Emocije su divlje i nepredvidljive. Ali, ako
                   budemo sigurni u ono što osećamo, to može promeniti način na
@@ -119,10 +153,10 @@
                   vrednostima, što vodi ka unutrašnjem miru i ispunjenijem
                   životu.
                 </p>
-                <h4 class="h4-heading h4-heading--pb">
+                <h5 class="h5-heading">dinamika</h5>
+                <h4 class="h4-heading">
                   cena: <span class="h4-heading--bold">&nbsp;5000rsd.</span>
                 </h4>
-                <!-- <h5 class="h5-heading">dinamika</h5> -->
               </div>
             </div>
           </div>
@@ -132,17 +166,17 @@
                 <img src="./src/img/mind.jpg" alt="" />
               </div>
               <div class="item-container--text">
-                <h3 class="h3-heading h3-heading--pb">Vikend Program</h3>
-                <p class="defoult-text">
+                <h3 class="h3-heading">Vikend Program</h3>
+                <p class="defoult-text defoult-text--bb">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Alias quidem veniam maxime facilis quisquam fugit aspernatur
                   temporibus, eius corrupti facere explicabo hic, doloribus
                   inventore molestiae?
                 </p>
-                <h4 class="h4-heading h4-heading--pb">
+                <h5 class="h5-heading">dinamika</h5>
+                <h4 class="h4-heading">
                   cena: <span class="h4-heading--bold">&nbsp;5000rsd.</span>
                 </h4>
-                <!-- <h5 class="h5-heading">dinamika</h5> -->
               </div>
             </div>
           </div>
@@ -152,17 +186,17 @@
                 <img src="./src/img/mind.jpg" alt="" />
               </div>
               <div class="item-container--text">
-                <h3 class="h3-heading h3-heading--pb">Individualni Rad</h3>
-                <p class="defoult-text">
+                <h3 class="h3-heading">Individualni Rad</h3>
+                <p class="defoult-text defoult-text--bb">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Natus unde eos ea illo pariatur! Commodi veritatis totam sunt
                   sapiente quis error quod eveniet cupiditate. Asperiores
                   distinctio praesentium magni sed tempore.
                 </p>
-                <h4 class="h4-heading h4-heading--pb">
+                <h5 class="h5-heading">dinamika</h5>
+                <h4 class="h4-heading">
                   cena: <span class="h4-heading--bold">&nbsp;5000rsd.</span>
                 </h4>
-                <!-- <h5 class="h5-heading">dinamika</h5> -->
               </div>
             </div>
           </div>
@@ -172,16 +206,16 @@
                 <img src="./src/img/mind.jpg" alt="" />
               </div>
               <div class="item-container--text">
-                <h3 class="h3-heading h3-heading--pb">Rad sa Tinejdžerima</h3>
-                <p class="defoult-text">
+                <h3 class="h3-heading">Rad sa Tinejdžerima</h3>
+                <p class="defoult-text defoult-text--bb">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Voluptatibus tempora maiores veritatis sapiente corporis,
                   reiciendis deleniti modi! Asperiores, quod aliquam.
                 </p>
-                <h4 class="h4-heading h4-heading--pb">
+                <h5 class="h5-heading">dinamika</h5>
+                <h4 class="h4-heading">
                   cena: <span class="h4-heading--bold">&nbsp;5000rsd.</span>
                 </h4>
-                <!-- <h5 class="h5-heading">dinamika</h5> -->
               </div>
             </div>
           </div>
@@ -191,17 +225,17 @@
                 <img src="./src/img/mind.jpg" alt="" />
               </div>
               <div class="item-container--text">
-                <h3 class="h3-heading h3-heading--pb">Rad sa Tinejdžerima</h3>
-                <p class="defoult-text">
+                <h3 class="h3-heading">Rad sa Tinejdžerima</h3>
+                <p class="defoult-text defoult-text--bb">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Voluptatibus tempora maiores veritatis sapiente corporis,
                   reiciendis deleniti modi! Asperiores, quod aliquam.
                 </p>
-                <h4 class="h4-heading h4-heading--pb">
+                <h5 class="h5-heading">dinamika</h5>
+                <h4 class="h4-heading">
                   cena:
                   <span class="h4-heading--bold">&nbsp;5000rsd.</span>
                 </h4>
-                <!-- <h5 class="h5-heading">dinamika</h5> -->
               </div>
             </div>
           </div>
@@ -210,9 +244,9 @@
     </section>
 
     <section class="contact" id="contact">
-      <div class="wrapper">
+      <div class="wrapper contact__container">
         <p>
-          <a class="contact--link" href="saemocijamanati@gmail.com"
+          <a class="contact--link" href="mailto:someone@example.com"
             >saemocijamanati@gmail.com</a
           >
         </p>

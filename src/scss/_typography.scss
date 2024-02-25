@@ -7,28 +7,25 @@
   text-align: center;
 }
 
-.h2-heading--pb {
-  padding-bottom: 5rem;
-}
-
 .h3-heading {
   font-size: 1.6rem;
   color: var(--brand-color);
   font-weight: 500;
   text-transform: capitalize;
-}
-
-.h3-heading--pb {
-  padding-bottom: 1.5rem;
+  padding: 1rem 0;
 }
 
 .h4-heading {
+  width: 20%;
   font-size: 1.2rem;
   text-transform: capitalize;
   display: flex;
   align-items: center;
   padding: 0.5rem;
-  justify-content: flex-end;
+  align-self: flex-end;
+  background-color: var(--main-color);
+  border-radius: var(--border-radius-base);
+  box-shadow: 1px 1px 3px #ddd;
 }
 
 .h4-heading--bold {
@@ -39,13 +36,17 @@
 .h5-heading {
   font-size: 1.1rem;
   text-transform: capitalize;
+  padding: 1rem 0;
 }
 
-.defoult-text--pb {
-  padding-bottom: 1rem;
+.defoult-text {
+  padding: 1rem 0;
+}
+
+.defoult-text--about {
+  padding: 1rem 0;
+}
+
+.defoult-text--bb {
   border-bottom: 1px solid #ddd;
-}
-
-.defoult-text--pt {
-  padding-top: 1rem;
 }

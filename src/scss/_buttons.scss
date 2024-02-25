@@ -1,4 +1,25 @@
 //
+.svg-icon {
+  position: relative;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  stroke: var(--brand-color);
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.svg-icon--nav {
+  stroke: var(--main-text-color);
+}
+
 button {
   font-size: 1rem;
   font-weight: normal;
