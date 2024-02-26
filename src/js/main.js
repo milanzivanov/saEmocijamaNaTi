@@ -11,10 +11,6 @@ function setHeaderHeight() {
 window.addEventListener("resize", setHeaderHeight);
 window.addEventListener("DOMContentLoaded", setHeaderHeight);
 
-// test
-// var links = document.querySelectorAll(".nav-list .nav-list__link");
-// links.forEach((link) => (link.style.color = "red"));
-
 ////////////
 // mobile menu
 let toggleBtn = document.querySelector(".nav-container__btn");

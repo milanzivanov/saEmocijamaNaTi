@@ -15,10 +15,15 @@
 
 .hero-container__content {
   display: flex;
+  flex-direction: column;
   background: var(--hero-gradient-background);
-  border-radius: var(--border-radius-base);
-  overflow: hidden;
   box-shadow: 1px 1px 3px #ddd;
+
+  @include viewport-md {
+    flex-direction: row;
+    border-radius: var(--border-radius-base);
+    overflow: hidden;
+  }
 }
 
 .hero-container__item {
@@ -39,22 +44,35 @@ h1.hero-container__title {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.1;
   font-weight: 700;
   text-transform: uppercase;
   transition: all 0.2s ease-in-out;
-
   padding: 1rem;
-  bottom: 0;
+
+  @include viewport-md {
+    font-size: 3rem;
+  }
 }
 
 .hero-container__img {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 30vw;
+  width: 100vw;
+
+  @include viewport-md {
+    width: 30vw;
+  }
 }
+
+// .hero-container__img::before {
+//   content: "";
+//   position: absolute;
+//   background-color: rgba(255, 255, 255, 0.1);
+//   inset: 0 0 0 0;
+// }
 
 .main__title--block {
   display: block;
@@ -68,10 +86,15 @@ h1.hero-container__title {
 // about
 .about-container {
   display: flex;
+  flex-direction: column;
   background: var(--hero-gradient-background);
-  border-radius: var(--border-radius-base);
-  overflow: hidden;
   box-shadow: 1px 1px 3px #ddd;
+
+  @include viewport-md {
+    flex-direction: row;
+    border-radius: var(--border-radius-base);
+    overflow: hidden;
+  }
 }
 
 .about-container__item {
@@ -96,12 +119,16 @@ h1.hero-container__title {
 
 .item-container {
   display: flex;
+  flex-direction: column;
   background: var(--hero-gradient-background);
   margin-bottom: 5rem;
   box-shadow: 1px 1px 3px #ddd;
 
-  border-radius: var(--border-radius-base);
-  overflow: hidden;
+  @include viewport-md {
+    border-radius: var(--border-radius-base);
+    overflow: hidden;
+    flex-direction: row;
+  }
 }
 
 .item-container--text {
@@ -115,7 +142,11 @@ h1.hero-container__title {
 }
 
 .item-container--img {
-  width: 15vw;
+  width: 50vw;
+
+  @include viewport-md {
+    width: 15vw;
+  }
 }
 
 // contact
@@ -129,15 +160,19 @@ h1.hero-container__title {
 
 .wrapper.contact__container {
   background-color: var(--white-color);
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: var(--border-radius-base);
   overflow: hidden;
 }
 
 .contact--link {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 0.9rem;
   color: var(--brand-color);
+
+  @include viewport-md {
+    font-size: 2rem;
+  }
 }
 
 ////////////////////

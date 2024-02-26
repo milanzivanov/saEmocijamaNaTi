@@ -15,16 +15,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 
   overflow: hidden;
   border-bottom-left-radius: var(--border-radius-base);
   border-bottom-right-radius: var(--border-radius-base);
+
+  @include viewport-md {
+    padding: 1.5rem 0;
+  }
 }
 
 .header__nav {
-  display: flex;
+  display: none;
   align-items: center;
+
+  @include viewport-md {
+    display: flex;
+  }
 }
 
 .nav-list {
@@ -47,15 +55,19 @@
 
 // naigation btn for mobile
 .nav-container__btn {
-  display: none;
+  display: flex;
   background-color: var(--main-color);
   border-radius: var(--border-radius-base);
+
+  @include viewport-md {
+    display: none;
+  }
 }
 
 // navigation nav for mobile
 .nav-container-mobile {
   position: absolute;
-  background-color: var(--main-color);
+  background: var(--gradient-background);
   padding: 1rem;
   inset: 0 0 0 0;
   display: unset;
