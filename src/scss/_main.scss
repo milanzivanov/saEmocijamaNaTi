@@ -168,10 +168,11 @@ h1.hero-container__title {
 }
 
 .contact__container {
-  background-color: var(--white-color);
+  // background-color: var(--white-color);
+  // background-color: var(--main-light-grey);
   padding: 0.5rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1rem;
 
   @include viewport-md {
@@ -179,20 +180,41 @@ h1.hero-container__title {
   }
 }
 
+.list__item {
+  color: var(--second-text-color);
+  text-transform: capitalize;
+}
+
+.list__item--email {
+  text-transform: lowercase;
+}
+
 .contact__item {
   background-color: var(--white-color);
   padding: 1rem;
   border-radius: var(--border-radius-base);
+  flex: 1;
 }
 
-.contact--link {
-  text-decoration: none;
-  font-size: 0.9rem;
-  color: var(--brand-color);
+.contact__list {
+  display: flex;
+  align-items: center;
 
-  @include viewport-md {
-    font-size: 2rem;
+  h5 {
+    padding-right: 0.5rem;
   }
+}
+
+.contact__list__item {
+  display: flex;
+  align-items: center;
+  padding-right: 0.5rem;
+}
+
+.contact__list__link {
+  display: flex;
+  align-items: center;
+  color: var(--brand-color);
 }
 
 ////////////////////

@@ -1,9 +1,7 @@
 .header {
   width: 100%;
   position: relative;
-  @include viewport-md {
-    box-shadow: 1px 0px 2px #ddd;
-  }
+  box-shadow: 1px 0px 2px #ddd;
 }
 
 .header.sticky {
@@ -14,6 +12,8 @@
 
   .nav-list__link:hover {
     color: var(--white-color);
+  }
+  @include viewport-md {
   }
 }
 
