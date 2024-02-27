@@ -1,6 +1,10 @@
 .main {
   position: relative;
   background: var(--hero-gradient-background);
+
+  @include viewport-md {
+    background: none;
+  }
 }
 
 .hero {

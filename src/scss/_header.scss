@@ -1,6 +1,7 @@
 .header {
   width: 100%;
   position: relative;
+  box-shadow: 1px 0px 2px #ddd;
 }
 
 .header.sticky {
@@ -8,16 +9,21 @@
   z-index: 20;
   background: var(--hero-gradient-background);
   transition: all 0.3s ease-in-out;
-  box-shadow: 1px 1px 3px #ddd;
+
+  .nav-list__link:hover {
+    color: var(--white-color);
+  }
 }
 
 .nav-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1rem;
+  justify-content: flex-end;
 
   @include viewport-md {
+    justify-content: center;
     padding: 1.5rem 0;
   }
 }
@@ -46,6 +52,10 @@
 
   &:hover {
     color: var(--main-color);
+
+    @include viewport-md {
+      color: var(--brand-color);
+    }
   }
 }
 
@@ -63,7 +73,6 @@
 // navigation nav for mobile
 .nav-container-mobile {
   position: absolute;
-  // background: var(--hero-gradient-background);
   background-color: var(--brand-color);
   padding: 1rem;
   inset: 0 0 0 0;
