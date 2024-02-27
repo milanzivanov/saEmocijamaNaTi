@@ -17,11 +17,11 @@
 .hero-container__content {
   display: flex;
   flex-direction: column;
-  // background: var(--hero-gradient-background);
-  // box-shadow: 1px 1px 3px #ddd;
 
   @include viewport-md {
     flex-direction: row;
+    background: var(--hero-gradient-background);
+    box-shadow: 1px 1px 3px #ddd;
     border-radius: var(--border-radius-base);
     overflow: hidden;
   }
