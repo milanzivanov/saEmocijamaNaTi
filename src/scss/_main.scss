@@ -11,7 +11,11 @@
   display: flex;
   height: calc(100vh - var(--headerHeight));
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+
+  @include viewport-md {
+    align-items: center;
+  }
 }
 
 .hero-container__content {

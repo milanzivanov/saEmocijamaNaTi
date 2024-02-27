@@ -1,12 +1,12 @@
 .header {
   width: 100%;
   position: relative;
-  background: var(--hero-gradient-background);
 }
 
 .header.sticky {
   position: fixed;
   z-index: 20;
+  background: var(--hero-gradient-background);
   transition: all 0.3s ease-in-out;
   box-shadow: 1px 1px 3px #ddd;
 }
@@ -16,10 +16,6 @@
   justify-content: center;
   align-items: center;
   padding: 1rem 0;
-
-  // overflow: hidden;
-  // border-bottom-left-radius: var(--border-radius-base);
-  // border-bottom-right-radius: var(--border-radius-base);
 
   @include viewport-md {
     padding: 1.5rem 0;
@@ -67,7 +63,8 @@
 // navigation nav for mobile
 .nav-container-mobile {
   position: absolute;
-  background: var(--hero-gradient-background);
+  // background: var(--hero-gradient-background);
+  background-color: var(--brand-color);
   padding: 1rem;
   inset: 0 0 0 0;
   display: unset;
