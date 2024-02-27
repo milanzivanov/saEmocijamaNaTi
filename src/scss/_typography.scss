@@ -5,6 +5,9 @@
   font-weight: 700;
   color: var(--brand-color);
 
+  // background-image: url("../img/pattern-img.jpg");
+  // background-color: var(--white-color);
+
   @include viewport-md {
     padding: 1rem 0;
     font-size: 2rem;
@@ -49,10 +52,6 @@
 }
 
 .defoult-text {
-  padding: 1rem 0;
-}
-
-.defoult-text--about {
   padding: 1rem 0;
 }
 

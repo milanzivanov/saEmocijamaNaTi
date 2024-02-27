@@ -1,5 +1,6 @@
 .main {
   position: relative;
+  background: var(--hero-gradient-background);
 }
 
 .hero {
@@ -16,8 +17,8 @@
 .hero-container__content {
   display: flex;
   flex-direction: column;
-  background: var(--hero-gradient-background);
-  box-shadow: 1px 1px 3px #ddd;
+  // background: var(--hero-gradient-background);
+  // box-shadow: 1px 1px 3px #ddd;
 
   @include viewport-md {
     flex-direction: row;
@@ -35,6 +36,7 @@
   position: relative;
 }
 .hero-container__item:nth-child(2) {
+  // background-image: url("../img/pattern-img.jpg");
   background-color: var(--white-color);
 }
 
@@ -44,7 +46,7 @@ h1.hero-container__title {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.1;
   font-weight: 700;
   text-transform: uppercase;
@@ -113,7 +115,7 @@ h1.hero-container__title {
 // program
 .program-container {
   display: flex;
-  gap: 1rem;
+  // gap: 1rem;
   flex-wrap: wrap;
 }
 
@@ -130,6 +132,10 @@ h1.hero-container__title {
     flex-direction: row;
   }
 }
+
+// .program-container__item {
+//   background: var(--hero-gradient-background);
+// }
 
 .item-container--text {
   position: relative;
@@ -154,19 +160,26 @@ h1.hero-container__title {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--main-light-grey);
+  background: var(--hero-gradient-background);
   padding: 5rem;
 }
 
-.wrapper.contact__container {
+.contact__container {
   background-color: var(--white-color);
   padding: 0.5rem;
-  border-radius: var(--border-radius-base);
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 
   @include viewport-md {
     padding: 1rem;
   }
+}
+
+.contact__item {
+  background-color: var(--white-color);
+  padding: 1rem;
+  border-radius: var(--border-radius-base);
 }
 
 .contact--link {

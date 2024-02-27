@@ -17,9 +17,9 @@
   align-items: center;
   padding: 1rem 0;
 
-  overflow: hidden;
-  border-bottom-left-radius: var(--border-radius-base);
-  border-bottom-right-radius: var(--border-radius-base);
+  // overflow: hidden;
+  // border-bottom-left-radius: var(--border-radius-base);
+  // border-bottom-right-radius: var(--border-radius-base);
 
   @include viewport-md {
     padding: 1.5rem 0;
@@ -67,7 +67,7 @@
 // navigation nav for mobile
 .nav-container-mobile {
   position: absolute;
-  background: var(--gradient-background);
+  background: var(--hero-gradient-background);
   padding: 1rem;
   inset: 0 0 0 0;
   display: unset;
@@ -82,7 +82,7 @@
 .nav-container-mobile__link {
   display: flex;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: var(--second-text-color);
   text-transform: uppercase;
   padding-bottom: 1rem;
