@@ -5,9 +5,6 @@
   font-weight: 700;
   color: var(--brand-color);
 
-  // background-image: url("../img/pattern-img.jpg");
-  // background-color: var(--white-color);
-
   @include viewport-md {
     padding: 1rem 0;
     font-size: 2rem;
@@ -19,7 +16,7 @@
   color: var(--brand-color);
   font-weight: 500;
   text-transform: capitalize;
-  padding: 1rem 0;
+  // padding: 1rem 0;
 }
 
 .h4-heading {

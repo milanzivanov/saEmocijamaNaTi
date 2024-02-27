@@ -1,7 +1,9 @@
 .header {
   width: 100%;
   position: relative;
-  box-shadow: 1px 0px 2px #ddd;
+  @include viewport-md {
+    box-shadow: 1px 0px 2px #ddd;
+  }
 }
 
 .header.sticky {
@@ -62,7 +64,7 @@
 // naigation btn for mobile
 .nav-container__btn {
   display: flex;
-  background-color: var(--main-color);
+  background-color: var(--white-color);
   border-radius: var(--border-radius-base);
 
   @include viewport-md {
@@ -95,7 +97,7 @@
 }
 
 .nav-container-mobile__link:hover {
-  color: var(--brand-color);
+  color: var(--white-color);
 }
 
 .nav-container-mobile.active {

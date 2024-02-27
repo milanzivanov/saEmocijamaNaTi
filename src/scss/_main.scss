@@ -123,7 +123,6 @@ h1.hero-container__title {
 // program
 .program-container {
   display: flex;
-  // gap: 1rem;
   flex-wrap: wrap;
 }
 
@@ -141,10 +140,6 @@ h1.hero-container__title {
   }
 }
 
-// .program-container__item {
-//   background: var(--hero-gradient-background);
-// }
-
 .item-container--text {
   position: relative;
   background-color: var(--white-color);
@@ -159,7 +154,7 @@ h1.hero-container__title {
   width: 50vw;
 
   @include viewport-md {
-    width: 15vw;
+    width: 17vw;
   }
 }
 
