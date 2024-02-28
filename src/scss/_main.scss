@@ -67,10 +67,10 @@ h1.hero-container__title {
 
 .hero-container__img {
   // ?
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
+  // position: absolute;
+  // left: 0;
+  // bottom: 0;
+  // width: 100vw;
 
   @include viewport-md {
     width: 30vw;
