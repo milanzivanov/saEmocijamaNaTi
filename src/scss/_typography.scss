@@ -60,3 +60,10 @@
 .defoult-text--bb {
   border-bottom: 1px solid #ddd;
 }
+
+.defoult-text--footer {
+  background-color: var(--main-color);
+  padding: 1rem;
+  border-radius: var(--border-radius-base);
+  overflow: hidden;
+}
