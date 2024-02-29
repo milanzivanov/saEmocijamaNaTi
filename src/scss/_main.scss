@@ -66,12 +66,6 @@ h1.hero-container__title {
 }
 
 .hero-container__img {
-  // ?
-  // position: absolute;
-  // left: 0;
-  // bottom: 0;
-  // width: 100vw;
-
   @include viewport-md {
     width: 30vw;
   }
@@ -119,7 +113,16 @@ h1.hero-container__title {
   flex-wrap: wrap;
 }
 
+.program-container__item {
+  margin-bottom: 1rem;
+
+  @include viewport-md {
+    margin-bottom: 3rem;
+  }
+}
+
 .item-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   background: var(--hero-gradient-background);
@@ -147,77 +150,14 @@ h1.hero-container__title {
   width: 100vw;
 
   @include viewport-md {
-    width: 17vw;
+    position: relative;
+    width: 13vw;
   }
 }
 
-// contact
-.contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--hero-gradient-background);
-}
-
-.contact__container {
-  display: flex;
-  flex-direction: column;
-  padding: 0.5rem;
-
-  @include viewport-md {
-    flex-direction: row;
-    gap: 1rem;
-    padding: 1rem;
-  }
-}
-
-.contact__item {
-  background-color: var(--white-color);
-  padding: 1rem;
-  border-radius: var(--border-radius-base);
-  flex: 1;
-  margin-bottom: 0.5rem;
-
-  @include viewport-md {
-    margin-bottom: 0;
-  }
-}
-
-.contact__item:nth-child(2) {
-  margin-bottom: 0;
-}
-
-.list__item {
-  color: var(--second-text-color);
-  text-transform: capitalize;
-  display: flex;
-  align-items: center;
-  padding-bottom: 0.5rem;
-}
-
-.list__item--email {
-  text-transform: lowercase;
-}
-
-.contact__list {
-  display: flex;
-  align-items: center;
-
-  h5 {
-    padding-right: 0.5rem;
-  }
-}
-
-.contact__list__item {
-  display: flex;
-  align-items: center;
-  padding-right: 0.5rem;
-}
-
-.contact__list__link {
-  display: flex;
-  align-items: center;
-  color: var(--brand-color);
+.img--position {
+  position: absolute;
+  bottom: 0;
 }
 
 ////////////////////
