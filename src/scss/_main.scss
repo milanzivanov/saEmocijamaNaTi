@@ -67,7 +67,7 @@ h1.hero-container__title {
 
 .hero-container__img {
   @include viewport-md {
-    width: 30vw;
+    width: 35vw;
   }
 }
 
@@ -146,17 +146,13 @@ h1.hero-container__title {
 }
 
 .item-container--img {
+  display: flex;
   width: 100vw;
 
   @include viewport-md {
     position: relative;
-    width: 13vw;
+    width: 15vw;
   }
-}
-
-.img--position {
-  position: absolute;
-  bottom: 0;
 }
 
 ////////////////////
