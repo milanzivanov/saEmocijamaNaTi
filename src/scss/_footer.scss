@@ -50,6 +50,7 @@ footer.contact {
 
 .list__item--email {
   text-transform: lowercase;
+  font-weight: 500;
 }
 
 .contact__list {
@@ -73,12 +74,14 @@ footer.contact {
   color: var(--brand-color);
 }
 
-.contact__info {
+//
+.contact__coder-info {
   color: var(--second-text-color);
   font-size: 0.4rem;
+  text-transform: lowercase;
 
   @include viewport-md {
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: 1rem;
   }
 

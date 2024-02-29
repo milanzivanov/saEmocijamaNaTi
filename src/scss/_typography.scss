@@ -62,6 +62,14 @@
   color: var(--brand-color);
 }
 
+.h5-heading--small {
+  text-transform: lowercase;
+}
+
+.h5-heading--small::first-letter {
+  text-transform: uppercase;
+}
+
 .defoult-text {
   padding: 1rem 0;
 }

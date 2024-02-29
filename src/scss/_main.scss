@@ -117,7 +117,7 @@ h1.hero-container__title {
   margin-bottom: 1rem;
 
   @include viewport-md {
-    margin-bottom: 3rem;
+    margin-bottom: 8rem;
   }
 }
 
@@ -126,7 +126,6 @@ h1.hero-container__title {
   display: flex;
   flex-direction: column;
   background: var(--hero-gradient-background);
-  margin-bottom: 5rem;
   box-shadow: 1px 1px 3px #ddd;
 
   @include viewport-md {
