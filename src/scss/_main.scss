@@ -65,13 +65,22 @@ h1.hero-container__title {
   text-transform: uppercase;
   transition: all 0.2s ease-in-out;
   padding: 1rem;
+  letter-spacing: 1px;
 
   @include viewport-md {
-    letter-spacing: 1px;
+    display: none;
     font-size: 2rem;
   }
   @include viewport-ld {
     font-size: 2.3rem;
+  }
+}
+
+h1.hero-container__title--desktop {
+  display: none;
+
+  @include viewport-md {
+    display: flex;
   }
 }
 
