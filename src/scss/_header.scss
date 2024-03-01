@@ -13,8 +13,6 @@
   .nav-list__link:hover {
     color: var(--white-color);
   }
-  @include viewport-md {
-  }
 }
 
 .nav-container {
@@ -50,6 +48,10 @@
   padding-right: 2rem;
   text-decoration: none;
   text-transform: uppercase;
+
+  @include viewport-md {
+    font-size: 0.925rem;
+  }
 
   &:hover {
     color: var(--main-color);

@@ -1,6 +1,6 @@
 .main {
   position: relative;
-  background: var(--hero-gradient-background);
+  background-color: var(--hero-background);
 
   @include viewport-md {
     background: none;
@@ -25,10 +25,10 @@
 .hero-container__content {
   display: flex;
   flex-direction: column;
+  background: var(--hero-background);
 
   @include viewport-md {
     flex-direction: row;
-    background: var(--hero-gradient-background);
     box-shadow: 1px 1px 3px #ddd;
     border-radius: var(--border-radius-base);
     overflow: hidden;
@@ -42,7 +42,9 @@
 
 .hero-container__item:nth-child(1) {
   position: relative;
+  background-color: var(--hero-background);
 }
+
 .hero-container__item:nth-child(2) {
   background-color: var(--second-text-color);
 
@@ -66,13 +68,19 @@ h1.hero-container__title {
 
   @include viewport-md {
     letter-spacing: 1px;
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+  @include viewport-ld {
+    font-size: 2.3rem;
   }
 }
 
 .hero-container__img {
   @include viewport-md {
     width: 35vw;
+  }
+  @include viewport-ld {
+    width: 38vw;
   }
 }
 
@@ -89,7 +97,7 @@ h1.hero-container__title {
 .about-container {
   display: flex;
   flex-direction: column;
-  background: var(--hero-gradient-background);
+  background: var(--hero-background);
   box-shadow: 1px 1px 3px #ddd;
 
   @include viewport-md {
@@ -101,6 +109,10 @@ h1.hero-container__title {
 
 .about-container__item {
   flex: 1;
+
+  @include viewport-md {
+    flex: unset;
+  }
 }
 
 .about-container__item--img {
@@ -108,7 +120,7 @@ h1.hero-container__title {
 }
 
 .about-container__item--text {
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 2rem 1rem 1rem 2rem;
   background-color: var(--white-color);
 }
 
@@ -119,7 +131,7 @@ h1.hero-container__title {
 }
 
 .program-container__item {
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
 
   @include viewport-md {
     margin-bottom: 8rem;
@@ -143,7 +155,7 @@ h1.hero-container__title {
 .item-container--text {
   position: relative;
   background-color: var(--white-color);
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 2rem 1rem 1rem 2rem;
   flex: 1 1 60%;
 
   display: flex;
@@ -151,12 +163,13 @@ h1.hero-container__title {
 }
 
 .item-container--img {
+  background-color: var(--main-light-grey);
   display: flex;
   width: 100vw;
 
   @include viewport-md {
     position: relative;
-    width: 15vw;
+    width: 20vw;
   }
 }
 
@@ -179,7 +192,7 @@ h1.hero-container__title {
   border-radius: var(--border-radius-base);
   transition: all 0.3s ease-in-out;
 
-  @include viewport-md {
+  @include viewport-ld {
     transform: none;
     right: 10px;
   }

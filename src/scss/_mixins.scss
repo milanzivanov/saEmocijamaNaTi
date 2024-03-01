@@ -28,8 +28,16 @@
   }
 }
 
+////////////
+
 @mixin viewport-md {
-  @media (min-width: 767px) {
+  @media (min-width: 769px) {
+    @content;
+  }
+}
+
+@mixin viewport-ld {
+  @media (min-width: 1367px) {
     @content;
   }
 }
