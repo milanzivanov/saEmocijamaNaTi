@@ -4,7 +4,7 @@ footer.contact {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--hero-gradient-background);
+  background: var(--gradient-background);
   padding: 2rem 0;
 
   @include viewport-md {
