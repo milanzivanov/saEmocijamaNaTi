@@ -112,7 +112,8 @@
 
 .defoult-text--footer {
   padding: 1rem;
-  box-shadow: 1px 1px 3px #b197fc;
+  box-shadow: 0 0 3px #b197fc;
+  // box-shadow: 0 0 3px var(--second-text-color);
   border-radius: var(--border-radius-base);
   overflow: hidden;
 }

@@ -5,6 +5,7 @@ footer.contact {
   justify-content: center;
   align-items: center;
   background: var(--gradient-background);
+  background: var(--second-text-color);
   padding: 5rem 0 3rem 0;
 
   @include viewport-md {
