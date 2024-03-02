@@ -75,7 +75,7 @@
 
 .defoult-text {
   font-size: 0.9rem;
-  text-wrap: balance;
+  text-wrap: pretty;
   padding: 1rem 0;
 
   @include viewport-md {
@@ -88,9 +88,8 @@
 }
 
 .defoult-text--footer {
-  background-color: var(--main-color);
   padding: 1rem;
-  box-shadow: 1px 1px 3px #ddd;
+  box-shadow: 1px 1px 3px #b197fc;
   border-radius: var(--border-radius-base);
   overflow: hidden;
 }
