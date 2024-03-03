@@ -10,6 +10,10 @@
   box-shadow: 0 0 2px #ddd;
   transition: all 0.3s ease-in-out;
 
+  .header-logo__link {
+    color: var(--second-text-color);
+  }
+
   .nav-list__link:hover {
     color: var(--white-color);
   }
@@ -17,7 +21,7 @@
 
 .nav-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   background: var(--gradient-background);
   padding: 1rem;
@@ -62,6 +66,20 @@
     @include viewport-md {
       color: var(--brand-color);
     }
+  }
+}
+
+.header-logo__link {
+  display: flex;
+  color: var(--second-text-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-right: 3rem;
+
+  @include viewport-md {
+    color: var(--brand-color);
   }
 }
 
