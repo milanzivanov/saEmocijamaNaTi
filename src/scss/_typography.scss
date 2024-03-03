@@ -24,12 +24,12 @@
 
 .h3-heading--mobile {
   display: flex;
-  background-color: var(--brand-color);
-  color: var(--main-color);
-  position: absolute;
-  padding: 1rem;
-  top: 0;
   width: 100%;
+  position: absolute;
+  top: 0;
+  background: var(--gradient-background);
+  color: var(--main-color);
+  padding: 1rem;
 
   @include viewport-md {
     display: none;
@@ -113,7 +113,6 @@
 .defoult-text--footer {
   padding: 1rem;
   box-shadow: 0 0 3px #b197fc;
-  // box-shadow: 0 0 3px var(--second-text-color);
   border-radius: var(--border-radius-base);
   overflow: hidden;
 }

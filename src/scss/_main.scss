@@ -1,6 +1,6 @@
 .main {
   position: relative;
-  background-color: var(--hero-background);
+  background-color: var(--main-light-grey);
 
   @include viewport-md {
     background: none;
@@ -27,7 +27,7 @@
 .hero-container__content {
   display: flex;
   flex-direction: column;
-  background: var(--hero-background);
+  background: var(--main-light-grey);
   width: 100%;
 
   @include viewport-md {
@@ -45,11 +45,11 @@
 
 .hero-container__item:nth-child(1) {
   position: relative;
-  background-color: var(--hero-background);
+  background-color: var(--main-light-grey);
 }
 
 .hero-container__item:nth-child(2) {
-  background-color: var(--hero-background);
+  background-color: var(--main-light-grey);
 
   @include viewport-md {
     background-color: var(--white-color);
@@ -109,7 +109,7 @@ h1.hero-container__title--desktop {
 .about-container {
   display: flex;
   flex-direction: column;
-  background: var(--hero-background);
+  background: var(--main-light-grey);
   box-shadow: 1px 1px 3px #ddd;
 
   @include viewport-md {
