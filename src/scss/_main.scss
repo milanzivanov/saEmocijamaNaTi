@@ -147,7 +147,7 @@ h1.hero-container__title {
   position: relative;
   display: flex;
   flex-direction: column;
-  background: var(--gradient-background);
+  // background: var(--gradient-background);
   box-shadow: 1px 1px 3px #ddd;
 
   @include viewport-md {

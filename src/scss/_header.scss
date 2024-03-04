@@ -6,12 +6,17 @@
 
 .header.sticky {
   position: fixed;
-  background: var(--gradient-background);
+  // background: var(--gradient-background);
+  background-color: var(--brand-color);
   z-index: 20;
   transition: background 250ms ease-in;
 
   .header-logo__link {
-    color: var(--second-text-color);
+    color: var(--white-color);
+  }
+
+  .nav-list__link {
+    color: var(--white-color);
   }
 
   .nav-list__link:hover {
@@ -109,7 +114,7 @@
   display: flex;
   text-decoration: none;
   font-size: 1.3rem;
-  color: var(--second-text-color);
+  color: var(--white-color);
   text-transform: uppercase;
   padding-bottom: 1rem;
 }
