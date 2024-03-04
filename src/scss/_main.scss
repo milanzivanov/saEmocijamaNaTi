@@ -1,8 +1,6 @@
 .main {
   position: relative;
   background-color: var(--main-light-grey);
-  // background: url("/src/img/webp/pattern-img.webp");
-
   @include viewport-md {
     background: none;
   }
@@ -78,7 +76,7 @@ h1.hero-container__title {
 }
 
 .hero-container__img {
-  display: flex;
+  display: none;
   @include viewport-md {
     display: flex;
     width: 35vw;
