@@ -20,7 +20,7 @@
   }
 
   .nav-list__link:hover {
-    color: var(--white-color);
+    color: var(--main-text-color);
   }
 }
 
@@ -62,15 +62,11 @@
   transition: 0.3s all ease-in-out;
 
   @include viewport-md {
-    font-size: 0.925rem;
+    font-size: 1rem;
   }
 
   &:hover {
-    color: var(--main-color);
-
-    @include viewport-md {
-      color: var(--brand-color);
-    }
+    color: var(--brand-color);
   }
 }
 

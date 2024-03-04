@@ -4,7 +4,7 @@ footer.contact {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--second-text-color);
+  background-color: var(--main-text-color);
   padding: 5rem 0 3rem 0;
 
   @include viewport-md {
@@ -41,7 +41,7 @@ footer.contact {
 }
 
 .list__item {
-  color: var(--second-text-color);
+  color: var(--main-text-color);
   text-transform: capitalize;
   display: flex;
   align-items: center;
