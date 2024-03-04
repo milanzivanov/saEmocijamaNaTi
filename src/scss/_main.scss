@@ -1,6 +1,7 @@
 .main {
   position: relative;
   background-color: var(--main-light-grey);
+  // background: url("/src/img/webp/pattern-img.webp");
 
   @include viewport-md {
     background: none;
@@ -15,7 +16,7 @@
   display: flex;
   height: calc(100vh - var(--headerHeight));
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 
   @include viewport-md {
     width: 100%;
@@ -49,7 +50,8 @@
 }
 
 .hero-container__item:nth-child(2) {
-  background-color: var(--main-light-grey);
+  background-color: var(--brand-color);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 
   @include viewport-md {
     background-color: var(--white-color);
@@ -57,38 +59,29 @@
 }
 
 h1.hero-container__title {
-  font-family: var(--primary-font-family);
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
-  font-size: 1.7rem;
-  line-height: 1.1;
+  padding: 1rem 0 1rem 1rem;
+  font-family: var(--primary-font-family);
+  font-size: 2.3rem;
+  line-height: 1.2;
   font-weight: 700;
   text-transform: uppercase;
   transition: all 0.2s ease-in-out;
-  padding: 0.5rem 0 1rem 1rem;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 
   @include viewport-md {
-    display: none;
-    font-size: 2rem;
-  }
-  @include viewport-ld {
+    line-height: 1.1;
     font-size: 2.5rem;
   }
 }
 
-h1.hero-container__title--desktop {
+.hero-container__img {
   display: none;
-
   @include viewport-md {
     display: flex;
-  }
-}
-
-.hero-container__img {
-  @include viewport-md {
     width: 35vw;
   }
   @include viewport-ld {
@@ -98,11 +91,15 @@ h1.hero-container__title--desktop {
 
 .main__title--block {
   display: block;
-  color: var(--brand-color);
+  color: var(--white-color);
   // background: var(--gradient-background);
   // -webkit-text-fill-color: transparent;
   // -webkit-background-clip: text;
   // background-clip: text;
+
+  @include viewport-md {
+    color: var(--brand-color);
+  }
 }
 
 // about
@@ -118,16 +115,6 @@ h1.hero-container__title--desktop {
     overflow: hidden;
   }
 }
-
-//
-// .fade-in {
-//   opacity: 0;
-//   transition: opacity 0.3s ease-in;
-// }
-
-// .fade-in.appear {
-//   opacity: 1;
-// }
 
 .about-container__item {
   flex: 1;
@@ -160,7 +147,7 @@ h1.hero-container__title--desktop {
   position: relative;
   display: flex;
   flex-direction: column;
-  background: var(--hero-gradient-background);
+  background: var(--gradient-background);
   box-shadow: 1px 1px 3px #ddd;
 
   @include viewport-md {
@@ -189,6 +176,16 @@ h1.hero-container__title--desktop {
     position: relative;
     width: 26vw;
   }
+}
+
+// fade in effect
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
 }
 
 ////////////////////

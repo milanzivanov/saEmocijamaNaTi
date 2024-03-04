@@ -23,7 +23,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--gradient-background);
+  // background: var(--gradient-background);
   padding: 1rem;
 
   @include viewport-md {
@@ -71,16 +71,12 @@
 
 .header-logo__link {
   display: flex;
-  color: var(--second-text-color);
+  color: var(--brand-color);
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.5rem;
   margin-right: 3rem;
-
-  @include viewport-md {
-    color: var(--brand-color);
-  }
 }
 
 // naigation btn for mobile
