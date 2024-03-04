@@ -51,7 +51,6 @@
 
 .hero-container__item:nth-child(2) {
   background-color: var(--brand-color);
-  // box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 
   @include viewport-md {
     background-color: var(--white-color);
@@ -79,7 +78,7 @@ h1.hero-container__title {
 }
 
 .hero-container__img {
-  display: none;
+  display: flex;
   @include viewport-md {
     display: flex;
     width: 35vw;
@@ -92,10 +91,6 @@ h1.hero-container__title {
 .main__title--block {
   display: block;
   color: var(--white-color);
-  // background: var(--gradient-background);
-  // -webkit-text-fill-color: transparent;
-  // -webkit-background-clip: text;
-  // background-clip: text;
 
   @include viewport-md {
     color: var(--brand-color);
@@ -147,7 +142,6 @@ h1.hero-container__title {
   position: relative;
   display: flex;
   flex-direction: column;
-  // background: var(--gradient-background);
   box-shadow: 1px 1px 3px #ddd;
 
   @include viewport-md {
