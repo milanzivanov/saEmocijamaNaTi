@@ -94,7 +94,7 @@
 // navigation nav for mobile
 .nav-container-mobile {
   position: absolute;
-  background-color: var(--brand-color);
+  background-color: var(--main-light-grey);
   padding: 1rem;
   inset: 0 0 0 0;
   display: unset;
@@ -110,7 +110,7 @@
   display: flex;
   text-decoration: none;
   font-size: 1.3rem;
-  color: var(--white-color);
+  color: var(--brand-color);
   text-transform: uppercase;
   padding-bottom: 1rem;
 }
