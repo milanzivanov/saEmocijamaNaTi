@@ -113,7 +113,7 @@ h1.hero-container__title--desktop {
   box-shadow: 1px 1px 3px #ddd;
 
   @include viewport-md {
-    flex-direction: row;
+    flex-direction: row-reverse;
     border-radius: var(--border-radius-base);
     overflow: hidden;
   }
@@ -121,10 +121,6 @@ h1.hero-container__title--desktop {
 
 .about-container__item {
   flex: 1;
-
-  @include viewport-md {
-    flex: unset;
-  }
 }
 
 .about-container__item--img {

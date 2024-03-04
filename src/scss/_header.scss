@@ -1,14 +1,14 @@
 .header {
   width: 100%;
   position: relative;
+  box-shadow: 0 0 2px #ddd;
 }
 
 .header.sticky {
   position: fixed;
   background: var(--gradient-background);
   z-index: 20;
-  box-shadow: 0 0 2px #ddd;
-  transition: all 0.3s ease-in-out;
+  transition: background 250ms ease-in;
 
   .header-logo__link {
     color: var(--second-text-color);
@@ -28,7 +28,7 @@
 
   @include viewport-md {
     background: none;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 1.5rem 0;
   }
 }
@@ -51,7 +51,7 @@
   font-size: 1.125rem;
   font-weight: 400;
   color: var(--main-text-color);
-  padding-right: 2rem;
+  padding-right: 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.3s all ease-in-out;
