@@ -1,4 +1,4 @@
-// contact
+// footer contact
 footer.contact {
   display: flex;
   flex-direction: column;
@@ -51,15 +51,6 @@ footer.contact {
 .list__item--email {
   text-transform: lowercase;
   font-weight: 500;
-}
-
-.contact__list {
-  display: flex;
-  align-items: center;
-
-  h5 {
-    padding-right: 0;
-  }
 }
 
 .contact__list__item {
