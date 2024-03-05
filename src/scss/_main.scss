@@ -60,8 +60,8 @@
   position: absolute;
   inset: 0 0 0 0;
   display: block;
-  background: url("/src/img/webp/mpb.webp") no-repeat right bottom
-    var(--brand-color);
+  background: url("https://ik.imagekit.io/milanz/milanzivanov_com/mpb_ldCJ3HjRY.webp")
+    no-repeat right bottom var(--brand-color);
   background-size: contain;
 
   @include viewport-md {
