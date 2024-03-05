@@ -6,7 +6,6 @@
 
 .header.sticky {
   position: fixed;
-  // background: var(--gradient-background);
   background-color: var(--brand-color);
   z-index: 20;
   transition: background 250ms ease-in;
@@ -28,7 +27,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // background: var(--gradient-background);
   padding: 1rem;
 
   @include viewport-md {
