@@ -113,7 +113,7 @@ h1.hero-container__title {
 .about-container {
   display: flex;
   flex-direction: column;
-  background: var(--main-light-grey);
+  background-color: var(--main-light-grey);
   box-shadow: 1px 1px 3px #ddd;
 
   @include viewport-md {
