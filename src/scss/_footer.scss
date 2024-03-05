@@ -69,6 +69,8 @@ footer.contact {
   color: var(--white-color);
   font-size: 0.5rem;
   text-transform: lowercase;
+  width: 100%;
+  text-align: left;
 
   @include viewport-md {
     font-size: 0.8rem;
