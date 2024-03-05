@@ -51,17 +51,13 @@
 }
 
 .nav-list__link {
-  font-size: 1.125rem;
+  font-size: 0.925rem;
   font-weight: 400;
   color: var(--main-text-color);
   padding-right: 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.3s all ease-in-out;
-
-  @include viewport-md {
-    font-size: 1rem;
-  }
 
   &:hover {
     color: var(--brand-color);
@@ -89,19 +85,24 @@
   }
 }
 
-// navigation nav for mobile
+// navigation for mobile view
 .nav-container-mobile {
   position: absolute;
   background-color: var(--main-light-grey);
   padding: 1rem;
   inset: 0 0 0 0;
   display: unset;
-  transform: translateX(-100%);
+  transform: translate(100%, -100%);
   justify-content: center;
   align-items: center;
   position: fixed;
   z-index: 21;
   transition: all 0.3s ease-in-out;
+}
+
+.nav-container-mobile.active {
+  display: flex;
+  transform: translate(0, 0);
 }
 
 .nav-container-mobile__link {
@@ -115,9 +116,4 @@
 
 .nav-container-mobile__link:hover {
   color: var(--white-color);
-}
-
-.nav-container-mobile.active {
-  display: flex;
-  transform: translateX(0);
 }
