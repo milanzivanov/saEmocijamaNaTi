@@ -48,10 +48,24 @@
 }
 
 .hero-container__item:nth-child(2) {
+  position: relative;
   background-color: var(--brand-color);
 
   @include viewport-md {
     background-color: var(--white-color);
+  }
+}
+
+.mobile-bg {
+  position: absolute;
+  inset: 0 0 0 0;
+  display: block;
+  background: url("/src/img/webp/mpb.webp") no-repeat right bottom
+    var(--brand-color);
+  background-size: contain;
+
+  @include viewport-md {
+    display: none;
   }
 }
 

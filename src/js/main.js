@@ -15,7 +15,6 @@ window.addEventListener("DOMContentLoaded", setHeaderHeight);
 // mobile menu
 let toggleBtn = document.querySelector(".nav-container__btn");
 let mobileNavigation = document.querySelector(".nav-container-mobile");
-// let backdrop = document.querySelector(".nav-backdrop-container");
 
 toggleBtn.addEventListener("click", function () {
   toggleBtn.classList.add("active");
