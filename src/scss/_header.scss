@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   position: relative;
-  box-shadow: 0 0 2px #ddd;
+  // box-shadow: 0 0 2px #ddd;
 }
 
 .header.sticky {
@@ -66,12 +66,17 @@
 
 .header-logo__link {
   display: flex;
-  color: var(--brand-color);
+  // color: var(--brand-color);
+  color: var(--white-color);
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.5rem;
   margin-right: 3rem;
+
+  @include viewport-md {
+    color: var(--brand-color);
+  }
 }
 
 // naigation btn for mobile

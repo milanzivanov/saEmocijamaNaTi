@@ -1,6 +1,7 @@
 .main {
   position: relative;
-  background-color: var(--main-light-grey);
+  // background-color: var(--main-light-grey);
+  background-color: var(--brand-color);
   @include viewport-md {
     background: none;
   }
@@ -60,8 +61,10 @@
   position: absolute;
   inset: 0 0 0 0;
   display: block;
+  // background: url("https://ik.imagekit.io/milanz/milanzivanov_com/mpb_ldCJ3HjRY.webp")
+  //   no-repeat right bottom var(--brand-color);
   background: url("https://ik.imagekit.io/milanz/milanzivanov_com/mpb_ldCJ3HjRY.webp")
-    no-repeat right bottom var(--brand-color);
+    no-repeat right bottom var(--white-color);
   background-size: contain;
 
   @include viewport-md {
@@ -91,7 +94,8 @@ h1.hero-container__title {
 
 .main__title--block {
   display: block;
-  color: var(--white-color);
+  // color: var(--white-color);
+  color: var(--brand-color);
 
   @include viewport-md {
     color: var(--brand-color);
