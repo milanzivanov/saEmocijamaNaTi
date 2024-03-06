@@ -129,8 +129,9 @@ images.forEach((image) => {
 });
 
 //////////////////////////
-// Fade items into view while scrolling
+// Fade items into view while scrolling and slide in from left or right
 const faders = document.querySelectorAll(".fade-in");
+const sliders = document.querySelectorAll(".slide-in");
 
 const appearOptions = {
   threshold: 0,
@@ -150,4 +151,8 @@ const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
 
 faders.forEach((fader) => {
   appearOnScroll.observe(fader);
+});
+
+sliders.forEach((slider) => {
+  appearOnScroll.observe(slider);
 });
