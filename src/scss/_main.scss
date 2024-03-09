@@ -1,8 +1,8 @@
 .main {
   position: relative;
   z-index: 10;
-  background: url("/src/img/webp/pupoljak.webp") bottom right no-repeat
-    var(--bg-color-1);
+  background: url("/src/img/webp/pupoljak.webp") bottom right no-repeat,
+    url("/src/img/webp/pattern-img.webp") bottom right repeat;
 
   @include viewport-md {
     background: url("/src/img/webp/pupoljak.webp") bottom left no-repeat,
