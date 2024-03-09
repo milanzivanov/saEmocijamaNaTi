@@ -52,7 +52,6 @@
 }
 
 .hero-container__item:nth-child(1) {
-  display: none;
   position: relative;
   background-color: var(--main-light-grey-opacity);
 
@@ -84,7 +83,6 @@
   display: none;
   @include viewport-md {
     display: flex;
-    width: 30vw;
     width: 25vw;
   }
 }
