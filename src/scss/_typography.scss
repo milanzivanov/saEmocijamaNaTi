@@ -76,7 +76,7 @@
   background-color: var(--main-light-grey);
 
   @include viewport-md {
-    width: 30%;
+    width: 40%;
     padding: 0.5rem 1rem;
     align-self: flex-end;
     border-radius: var(--border-radius-base);
@@ -97,7 +97,7 @@
 .h5-heading {
   font-family: var(--primary-font-family);
   position: relative;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
   text-transform: capitalize;
   letter-spacing: 1px;

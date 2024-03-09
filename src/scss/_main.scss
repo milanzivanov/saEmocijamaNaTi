@@ -61,10 +61,7 @@
   background-color: var(--white-color-opacity);
 
   @include viewport-md {
-    width: 50%;
-    // background: url("/src/img/procvetali-jorgovani.png") no-repeat bottom
-    //   right var(--white-color);
-    // background-size: contain;
+    width: 55%;
     background: url("/src/img/webp/pupoljakSaLevaNaDesno.webp") bottom left
       no-repeat var(--white-color-opacity);
 
@@ -193,6 +190,22 @@ h1.hero-container__title {
   @include viewport-md {
     padding: 1rem;
   }
+}
+
+.item-container-list {
+  display: block;
+  padding: 0 0 2rem 1rem;
+  list-style: disc;
+}
+
+.item-container-list__item {
+  color: var(--main-text-color);
+  line-height: 1.8;
+}
+
+.item-container-list__item--inportant-color {
+  color: var(--brand-color);
+  font-weight: 600;
 }
 
 .item-container--img {
