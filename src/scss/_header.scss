@@ -87,8 +87,8 @@
 // navigation for mobile view
 .nav-container-mobile {
   position: absolute;
-  background: url("/src/img/webp/pupoljak.webp") no-repeat bottom right
-    var(--bg-color-1);
+  background: url("/src/img/webp/pupoljak.webp") no-repeat bottom right,
+    url("/src/img/webp/pattern-img.webp") repeat;
   inset: 0 0 0 0;
   display: unset;
   transform: translate(100%, -100%);
@@ -99,12 +99,21 @@
   transition: all 0.3s ease-in-out;
 }
 
+.nav-container-mobile::before {
+  position: absolute;
+  z-index: 0;
+  content: "";
+  inset: 0 0 0 0;
+  background-color: var(--bg-color-opacity-1);
+}
+
 .nav-container-mobile.active {
   display: flex;
   transform: translate(0, 0);
 }
 
 .nav-container-mobile__link {
+  position: relative;
   display: flex;
   text-decoration: none;
   font-size: 1.3rem;

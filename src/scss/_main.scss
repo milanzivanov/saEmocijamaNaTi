@@ -5,9 +5,17 @@
     var(--bg-color-1);
 
   @include viewport-md {
-    background: url("/src/img/webp/pupoljak.webp") bottom left no-repeat
-      var(--bg-color-1);
+    background: url("/src/img/webp/pupoljak.webp") bottom left no-repeat,
+      url("/src/img/webp/cvetic.webp") bottom right no-repeat,
+      url("/src/img/webp/pattern-img.webp") bottom right repeat;
   }
+}
+
+.main::before {
+  position: absolute;
+  content: "";
+  inset: 0 0 0 0;
+  background-color: var(--bg-color-opacity-1);
 }
 
 .hero {
@@ -128,7 +136,7 @@ h1.hero-container__title {
 
 .about-container__item--img {
   position: relative;
-  background-color: var(--main-light-grey);
+  background-color: var(--main-light-grey-opacity);
 }
 
 .about-container__item--text {
