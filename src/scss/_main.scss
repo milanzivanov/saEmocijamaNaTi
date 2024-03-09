@@ -37,11 +37,14 @@
 
 .hero-container__content {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   width: 100%;
+  background: url("/src/img/webp/marina-in-white.webp") no-repeat bottom right;
+  background-size: contain;
   background-color: var(--white-color-opacity);
 
   @include viewport-md {
+    background: none;
     background-color: transparent;
     flex-direction: row;
     justify-content: center;
@@ -81,6 +84,7 @@
 }
 
 .hero-container__img {
+  display: none;
   @include viewport-md {
     display: flex;
     width: 25vw;
