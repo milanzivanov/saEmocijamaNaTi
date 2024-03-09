@@ -1,28 +1,34 @@
 :root {
-  --primary-font-family: "Rubik", system-ui, sans-serif;
-  --secondery-font-family: system-ui, sans-serif;
+  --primary-font-family: "Poppins", system-ui, sans-serif;
+  --secondery-font-family: "Roboto", system-ui, sans-serif;
   --headerHeight: var(--headerHeight);
   --grid-unit: 1rem;
   --border-radius-base: 5px;
   --main-light-grey: #e9ecef;
+  --main-light-grey-opacity: rgba(233, 236, 239, 0.8);
   --second-light-grey: #f8f9fa;
   --white-color: #fff;
+  --white-color-opacity: rgba(255, 255, 255, 0.8);
   --main-text-color: #212529;
   --second-text-color: #4a4f5b;
-  --brand-color: #3706cb;
-  --brand-color-90: rgba(55, 6, 203, 0.65);
-
-  --gradient-background: linear-gradient(45deg, #b197fc 45%, #e599f7);
+  --brand-color: #d840a0;
+  --bg-color-1: #d2c1ff;
+  --bg-color-2: #cfbcff;
+  --bg-color-opacity-1: rgba(210, 193, 255, 0.9);
+  --bg-color-opacity-2: rgba(207, 188, 255, 0.9);
+  --gradient-background: linear-gradient(45deg, #d2c1ff 45%, #cfbcff);
+  --gradient-neutral-background: rgba(33, 37, 41, 0.05);
 }
 
-// #d7b46a;
-// #4a4f5b
+// #952373
+// #A03A82
+// #CB76AB
+// #D840A0
+// #E877A3
+// #FFC1C7
 
-// #f8f9fa
-// #e9ecef
-
-// #343a40
-// #212529
+// #d2c1ff;
+// #bfdfff;
 
 // #e599f7
 // #b197fc

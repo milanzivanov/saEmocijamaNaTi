@@ -3,20 +3,21 @@
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 1rem;
   background-color: var(--main-light-grey);
-  color: var(--brand-color);
+  color: var(--second-text-color);
 
   @include viewport-md {
     background-color: transparent;
-    padding: 1rem 0;
+    color: var(--second-text-color);
+    padding: 5rem 0 1rem 0;
     font-size: 1.5rem;
   }
 }
 
 .h3-heading {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--brand-color);
@@ -29,12 +30,12 @@
 .h3-heading--mobile {
   display: flex;
   width: 100%;
-  position: absolute;
-  z-index: 10;
+  position: relative;
+  z-index: 9;
   top: 0;
-  background: url("/src/img/webp/pattern-img.webp") repeat-y;
   color: var(--second-light-grey);
-  padding: 1rem;
+  color: var(--second-text-color);
+  padding: 0 0 1rem 0;
 
   @include viewport-md {
     display: none;
@@ -46,7 +47,7 @@
   position: absolute;
   inset: 0 0 0 0;
   z-index: -1;
-  background-color: var(--brand-color-90);
+  background-color: var(--bg-color-1);
 }
 
 .h3-heading--desktop {
@@ -58,10 +59,13 @@
 }
 
 .h4-heading {
+  position: relative;
+  z-index: 20;
   display: flex;
   align-items: center;
   align-self: flex-end;
-  font-size: 1.1rem;
+  width: 100%;
+  font-size: 0.9rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   padding: 0.5rem;
@@ -88,6 +92,7 @@
 }
 
 .h5-heading {
+  position: relative;
   font-size: 1.1rem;
   text-transform: capitalize;
   letter-spacing: 1px;
@@ -127,6 +132,7 @@
 
 .defoult-text--footer {
   padding: 1rem;
+  background-color: var(--white-color-opacity);
   box-shadow: 0 0 3px #ddd;
   border-radius: var(--border-radius-base);
   overflow: hidden;

@@ -1,26 +1,14 @@
 .header {
   width: 100%;
   position: relative;
-  // box-shadow: 0 0 2px #ddd;
 }
 
 .header.sticky {
   position: fixed;
-  background-color: var(--brand-color);
+  background-color: #beacef;
   z-index: 20;
-  transition: background 250ms ease-in;
-
-  .header-logo__link {
-    color: var(--white-color);
-  }
-
-  .nav-list__link {
-    color: var(--white-color);
-  }
-
-  .nav-list__link:hover {
-    color: var(--main-text-color);
-  }
+  transition: background 300ms ease-in;
+  box-shadow: 0 0 3px #ddd;
 }
 
 .nav-container {
@@ -32,7 +20,7 @@
   @include viewport-md {
     background: none;
     justify-content: space-around;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
   }
 }
 
@@ -51,7 +39,7 @@
 }
 
 .nav-list__link {
-  font-size: 0.925rem;
+  font-size: 1.025rem;
   font-weight: 400;
   color: var(--main-text-color);
   padding-right: 1.5rem;
@@ -64,19 +52,25 @@
   }
 }
 
+.header-logo {
+  position: relative;
+}
+
+.header-logo--b-line {
+  position: absolute;
+  height: 3px;
+  width: 30px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #80554b;
+  border-radius: 3px;
+}
+
 .header-logo__link {
   display: flex;
-  // color: var(--brand-color);
-  color: var(--white-color);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.5rem;
-  margin-right: 3rem;
-
-  @include viewport-md {
-    color: var(--brand-color);
-  }
+  height: 60px;
+  width: 60px;
 }
 
 // naigation btn for mobile
@@ -93,8 +87,8 @@
 // navigation for mobile view
 .nav-container-mobile {
   position: absolute;
-  background-color: var(--main-light-grey);
-  padding: 1rem;
+  background: url("/src/img/webp/pupoljak.webp") no-repeat bottom right
+    var(--bg-color-1);
   inset: 0 0 0 0;
   display: unset;
   transform: translate(100%, -100%);
@@ -114,7 +108,7 @@
   display: flex;
   text-decoration: none;
   font-size: 1.3rem;
-  color: var(--brand-color);
+  color: var(--second-text-color);
   text-transform: uppercase;
   padding-bottom: 1rem;
 }

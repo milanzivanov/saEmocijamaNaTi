@@ -4,7 +4,7 @@ footer.contact {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--main-text-color);
+  background-color: var(--bg-color-2);
   padding: 5rem 0 3rem 0;
 
   @include viewport-md {
@@ -25,7 +25,7 @@ footer.contact {
 }
 
 .contact__item {
-  background-color: var(--white-color);
+  position: relative;
   padding: 1rem;
   border-radius: var(--border-radius-base);
   flex: 1;
@@ -36,11 +36,27 @@ footer.contact {
   }
 }
 
+.contact__item:nth-child(1) {
+  background: url("/src/img/webp/pattern-img.webp") bottom right repeat;
+}
+
+.contact__item:nth-child(1)::before {
+  position: absolute;
+  z-index: 0;
+  content: "";
+  inset: 0 0 0 0;
+  background-color: var(--white-color-opacity);
+}
+
 .contact__item:nth-child(2) {
+  background: url("/src/img/webp/frontalniJorgovan.webp") bottom right no-repeat
+    var(--white-color-opacity);
+  background-size: contain;
   margin-bottom: 0;
 }
 
 .list__item {
+  position: relative;
   color: var(--main-text-color);
   text-transform: capitalize;
   display: flex;
@@ -48,7 +64,11 @@ footer.contact {
   padding-bottom: 0.5rem;
 }
 
-.list__item--email {
+.list__item--email-mb {
+  margin-bottom: 1rem;
+}
+
+.list__item--email-text {
   text-transform: lowercase;
   font-weight: 500;
 }
@@ -63,12 +83,13 @@ footer.contact {
   display: flex;
   align-items: center;
   color: var(--brand-color);
+  margin-right: 5px;
 }
 
 .contact__coder-info {
   width: 100%;
   padding: 1rem;
-  color: var(--white-color);
+  color: var(--second-text-color);
   font-size: 0.5rem;
   text-transform: lowercase;
   text-align: left;
@@ -80,6 +101,6 @@ footer.contact {
 
   a {
     text-decoration: none;
-    color: var(--white-color);
+    color: var(--second-text-color);
   }
 }

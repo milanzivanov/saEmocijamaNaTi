@@ -4,9 +4,7 @@
 }
 
 .section {
-  padding-bottom: 5rem;
+  @include viewport-md {
+    padding-bottom: 7rem;
+  }
 }
-
-// .padding--b {
-//   padding-bottom: 2rem;
-// }
