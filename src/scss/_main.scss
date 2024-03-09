@@ -34,6 +34,7 @@
 
   @include viewport-md {
     flex-direction: row;
+    justify-content: center;
     gap: 1rem;
   }
 }
@@ -60,7 +61,7 @@
   background-color: var(--white-color-opacity);
 
   @include viewport-md {
-    width: 75%;
+    width: 50%;
     // background: url("/src/img/procvetali-jorgovani.png") no-repeat bottom
     //   right var(--white-color);
     // background-size: contain;
