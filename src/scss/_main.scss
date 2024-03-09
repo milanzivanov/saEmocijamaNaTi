@@ -37,10 +37,12 @@
 
 .hero-container__content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   width: 100%;
+  background-color: var(--white-color-opacity);
 
   @include viewport-md {
+    background-color: transparent;
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
@@ -53,9 +55,9 @@
 
 .hero-container__item:nth-child(1) {
   position: relative;
-  background-color: var(--main-light-grey-opacity);
 
   @include viewport-md {
+    background-color: var(--white-color-opacity);
     display: flex;
     box-shadow: 1px 1px 3px #ddd;
     border-radius: var(--border-radius-base);
@@ -65,7 +67,6 @@
 
 .hero-container__item:nth-child(2) {
   position: relative;
-  background-color: var(--white-color-opacity);
 
   @include viewport-md {
     width: 55%;
@@ -80,7 +81,6 @@
 }
 
 .hero-container__img {
-  display: none;
   @include viewport-md {
     display: flex;
     width: 25vw;
