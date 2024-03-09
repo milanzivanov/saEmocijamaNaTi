@@ -200,7 +200,10 @@ h1.hero-container__title {
 
 .item-container-list__item {
   color: var(--main-text-color);
-  line-height: 1.8;
+  line-height: 1.6;
+
+  @include viewport-md {
+  }
 }
 
 .item-container-list__item--inportant-color {
