@@ -150,6 +150,8 @@ h1.hero-container__title {
 
 .about-container__item--img {
   position: relative;
+  background: url("/src/img/webp/frontalniJorgovan.webp") no-repeat center
+    center;
   background-color: var(--main-light-grey);
 }
 
@@ -160,6 +162,12 @@ h1.hero-container__title {
   @include viewport-md {
     background-color: var(--white-color-opacity-85);
   }
+}
+
+.about-info-link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--brand-color);
 }
 
 // program
