@@ -56,17 +56,6 @@
   position: relative;
 }
 
-.header-logo--b-line {
-  position: absolute;
-  height: 3px;
-  width: 30px;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #80554b;
-  border-radius: 3px;
-}
-
 .header-logo__link {
   display: flex;
   height: 60px;

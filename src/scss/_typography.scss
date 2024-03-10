@@ -1,11 +1,12 @@
 .h2-heading {
+  position: relative;
   font-family: var(--primary-font-family);
   font-size: 1.3rem;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
   padding: 1rem;
-  background-color: var(--main-light-grey-opacity);
+  background-color: var(--main-light-grey);
   color: var(--second-text-color);
   color: var(--brand-color);
 
@@ -111,8 +112,9 @@
 }
 
 .h5-heading--small {
-  padding: 0 0.5rem 0 0;
+  color: var(--brand-color);
   text-transform: lowercase;
+  padding: 0 0.5rem 0 0;
 }
 
 .h5-heading--small::first-letter {
@@ -136,8 +138,8 @@
 }
 
 .defoult-text--footer {
+  background-color: var(--white-color-opacity-85);
   padding: 1rem;
-  background-color: var(--white-color-opacity);
   box-shadow: 0 0 3px #ddd;
   border-radius: var(--border-radius-base);
   overflow: hidden;

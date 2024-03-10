@@ -36,12 +36,14 @@
 }
 
 .hero-container__content {
+  position: relative;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   width: 100%;
   background: url("/src/img/webp/marina-in-white.webp") no-repeat bottom right;
   background-size: contain;
-  background-color: var(--white-color-opacity);
+  background-color: var(--white-color-opacity-85);
 
   @include viewport-md {
     background: none;
@@ -60,7 +62,7 @@
   position: relative;
 
   @include viewport-md {
-    background-color: var(--white-color-opacity);
+    background-color: var(--white-color-opacity-60);
     display: flex;
     box-shadow: 1px 1px 3px #ddd;
     border-radius: var(--border-radius-base);
@@ -74,7 +76,7 @@
   @include viewport-md {
     width: 55%;
     background: url("/src/img/webp/pupoljakSaLevaNaDesno.webp") bottom left
-      no-repeat var(--white-color-opacity);
+      no-repeat var(--white-color-opacity-60);
 
     bottom: 25px;
     box-shadow: 1px 1px 3px #ddd;
@@ -119,13 +121,24 @@ h1.hero-container__title {
 
 // about
 .about {
+  position: relative;
+  z-index: 10;
   @include viewport-md {
     background: url("/src/img/webp/procvetali-jorgovani.webp") no-repeat bottom
-      left var(--bg-color-2);
+        left,
+      url("/src/img/webp/pattern-img.webp") repeat;
   }
 }
 
+.about::before {
+  position: absolute;
+  content: "";
+  inset: 0 0 0 0;
+  background-color: var(--bg-color-opacity-2);
+}
+
 .about-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   box-shadow: 1px 1px 3px #ddd;
@@ -139,7 +152,7 @@ h1.hero-container__title {
 
 .about-container__item--img {
   position: relative;
-  background-color: var(--main-light-grey-opacity);
+  background-color: var(--main-light-grey);
 }
 
 .about-container__item--text {
@@ -147,19 +160,27 @@ h1.hero-container__title {
   background-color: var(--white-color);
 
   @include viewport-md {
-    background-color: var(--white-color-opacity);
+    background-color: var(--white-color-opacity-85);
   }
 }
 
 // program
 .program {
+  position: relative;
   background-color: var(--main-light-grey);
   overflow: hidden;
 
   @include viewport-md {
-    background: url("/src/img/webp/pupoljak.webp") no-repeat bottom right
-      var(--bg-color-1);
+    background: url("/src/img/webp/pupoljak.webp") no-repeat bottom right,
+      url("/src/img/webp/pattern-img.webp") repeat;
   }
+}
+
+.program::before {
+  position: absolute;
+  content: "";
+  inset: 0 0 0 0;
+  background-color: var(--bg-color-opacity-1);
 }
 
 .program-container {
@@ -169,7 +190,6 @@ h1.hero-container__title {
 
 .program-container__item {
   position: relative;
-  margin-bottom: 3rem;
 
   @include viewport-md {
     margin-bottom: 8rem;
@@ -194,7 +214,7 @@ h1.hero-container__title {
   display: flex;
   flex-direction: column;
   position: relative;
-  background-color: var(--white-color-opacity);
+  background-color: var(--white-color-opacity-85);
   padding: 0 1rem 1rem 1rem;
   flex: 1 1 60%;
 
@@ -232,7 +252,7 @@ h1.hero-container__title {
 
   @include viewport-md {
     width: 25vw;
-    background-color: var(--main-light-grey-opacity);
+    background-color: var(--main-light-grey);
   }
   @include viewport-ld {
     width: 15vw;
