@@ -17,7 +17,7 @@ footer.contact::before {
   position: absolute;
   content: "";
   inset: 0 0 0 0;
-  background-color: var(--bg-color-opacity-2);
+  background-color: var(--brand-color-opacity-90);
 }
 
 .contact__container {
@@ -88,7 +88,7 @@ footer.contact::before {
   position: relative;
   width: 100%;
   padding: 1rem;
-  color: var(--second-text-color);
+  color: var(--white-color);
   font-size: 0.5rem;
   text-transform: lowercase;
   text-align: left;
@@ -100,6 +100,6 @@ footer.contact::before {
 
   a {
     text-decoration: none;
-    color: var(--second-text-color);
+    color: var(--white-color);
   }
 }
