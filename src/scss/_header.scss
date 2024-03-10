@@ -10,6 +10,10 @@
   transition: background 300ms ease-in;
   box-shadow: 0 0 3px #ddd;
 
+  .nav-container {
+    background-color: transparent;
+  }
+
   .nav-list__link {
     color: var(--white-color);
   }
@@ -23,11 +27,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: transparent;
   padding: 1rem;
 
   @include viewport-md {
-    background: none;
     justify-content: space-around;
+    background-color: var(--gradient-neutral-background);
+    border-bottom-left-radius: var(--border-radius-base);
+    border-bottom-right-radius: var(--border-radius-base);
     padding: 1rem 0;
   }
 }
