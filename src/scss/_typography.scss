@@ -69,8 +69,9 @@
   width: 100%;
   position: relative;
   z-index: 20;
-  background-color: var(--gradient-neutral-background);
-  font-family: var(--primary-font-family);
+  background-color: var(--brand-color);
+  color: var(--white-color);
+  font-family: var(--secondery-font-family);
   font-size: 0.9rem;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -88,7 +89,7 @@
 
 .h4-heading--bold {
   font-weight: 500;
-  color: var(--brand-color);
+  color: var(--white-color);
 }
 
 .h4-heading--br {

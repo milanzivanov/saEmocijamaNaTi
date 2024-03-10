@@ -5,10 +5,18 @@
 
 .header.sticky {
   position: fixed;
-  background-color: #beacef;
+  background-color: var(--brand-color);
   z-index: 20;
   transition: background 300ms ease-in;
   box-shadow: 0 0 3px #ddd;
+
+  .nav-list__link {
+    color: var(--white-color);
+  }
+
+  .nav-list__link:hover {
+    color: var(--main-text-color);
+  }
 }
 
 .nav-container {
