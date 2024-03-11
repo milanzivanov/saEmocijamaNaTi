@@ -7,7 +7,6 @@
   letter-spacing: 1px;
   padding: 1rem;
   background-color: var(--main-light-grey);
-  color: var(--second-text-color);
   color: var(--brand-color);
 
   @include viewport-md {
@@ -38,21 +37,13 @@
   z-index: 9;
   font-size: 0.85rem;
   top: 0;
-  color: var(--second-text-color);
+  color: var(--brand-color);
   padding: 0 0 1rem 0;
 
   @include viewport-md {
     display: none;
   }
 }
-
-// .h3-heading--mobile::before {
-//   content: "";
-//   position: absolute;
-//   inset: 0 0 0 0;
-//   z-index: -1;
-//   background-color: var(--bg-color-1);
-// }
 
 .h3-heading--desktop {
   display: none;
