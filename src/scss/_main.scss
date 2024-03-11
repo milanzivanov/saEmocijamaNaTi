@@ -155,7 +155,7 @@ h1.hero-container__title {
 }
 
 .about-container__item--text {
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
   background-color: var(--white-color);
 
   @include viewport-md {
