@@ -1,21 +1,16 @@
 .main {
   position: relative;
-  background: url("/src/img/webp/pupoljak.webp") bottom right no-repeat,
-    url("/src/img/webp/pattern-img.webp") repeat;
-
-  @include viewport-md {
-    background: url("/src/img/webp/pupoljak.webp") bottom left no-repeat,
-      url("/src/img/webp/cvetic.webp") bottom right no-repeat,
-      url("/src/img/webp/pattern-img.webp") repeat;
-  }
+  background: url("/src/img/webp/marina-in-white.webp") bottom right no-repeat;
+  background-color: var(--bg-color-1);
+  background-size: contain;
 }
 
-.main::before {
-  position: absolute;
-  content: "";
-  inset: 0 0 0 0;
-  background-color: var(--bg-color-opacity-1);
-}
+// .main::before {
+//   position: absolute;
+//   content: "";
+//   inset: 0 0 0 0;
+//   background-color: var(--bg-color-opacity-1);
+// }
 
 .hero {
   position: relative;
@@ -24,73 +19,29 @@
 .hero-container {
   display: flex;
   height: calc(100vh - var(--headerHeight));
-  justify-content: center;
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
-
-  @include viewport-md {
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-  }
 }
 
 .hero-container__content {
   position: relative;
   z-index: 10;
   display: flex;
-  flex-direction: column;
   width: 100%;
-  background: url("/src/img/webp/marina-in-white.webp") no-repeat bottom right;
-  background-size: contain;
-  background-color: var(--white-color-opacity-85);
-
-  @include viewport-md {
-    background: none;
-    background-color: transparent;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
-  }
 }
 
-.hero-container__item {
+.hero-container__main-heading {
+  width: 100%;
+  background-color: var(--white-color-opacity);
+  padding: 1rem 0 2rem 0;
+}
+
+.main-heading-container {
   display: flex;
-}
-
-.hero-container__item:nth-child(1) {
-  position: relative;
-
-  @include viewport-md {
-    background-color: var(--white-color);
-    display: flex;
-    box-shadow: 1px 1px 3px #ddd;
-    border-radius: var(--border-radius-base);
-    overflow: hidden;
-  }
-}
-
-.hero-container__item:nth-child(2) {
-  position: relative;
-
-  @include viewport-md {
-    width: 55%;
-    background: url("/src/img/webp/pupoljakSaLevaNaDesno.webp") bottom left
-      no-repeat;
-    background-color: var(--white-color);
-
-    bottom: 25px;
-    box-shadow: 1px 1px 3px #ddd;
-    border-radius: var(--border-radius-base);
-    overflow: hidden;
-  }
-}
-
-.hero-container__img {
-  display: none;
-  @include viewport-md {
-    display: flex;
-    width: 25vw;
-  }
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 h1.hero-container__title {
@@ -99,24 +50,33 @@ h1.hero-container__title {
   justify-content: center;
   position: relative;
   font-family: var(--primary-font-family);
-  font-size: 1.5rem;
+  font-size: 3rem;
   line-height: 1.3;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding: 2rem 0 2rem 1rem;
+  padding: 0;
   transition: all 0.2s ease-in-out;
-
-  @include viewport-md {
-    font-weight: 700;
-    line-height: 1.2;
-    font-size: 2.1rem;
-  }
 }
 
 .main__title--block {
   display: block;
   color: var(--brand-color);
+}
+
+.defoult-text--hero {
+  font-size: 1.5rem;
+  width: 65%;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--brand-color);
+  color: var(--white-color);
+  border-radius: var(--border-radius-base);
+  text-decoration: none;
+  padding: 0.5rem 2rem;
 }
 
 // about

@@ -1,5 +1,5 @@
 :root {
-  --primary-font-family: "Poppins", system-ui, sans-serif;
+  --primary-font-family: "Rubik", "Poppins", system-ui, sans-serif;
   --secondery-font-family: "Roboto", system-ui, sans-serif;
   --headerHeight: var(--headerHeight);
   --grid-unit: 1rem;
@@ -9,15 +9,15 @@
   --second-light-grey: #f8f9fa;
   --white-color: #fff;
   --white-color-opacity-85: rgba(255, 255, 255, 0.85);
-  --white-color-opacity-60: rgba(255, 255, 255, 0.6);
+  --white-color-opacity: rgba(255, 255, 255, 0.05);
   --main-text-color: #212529;
   --second-text-color: #4a4f5b;
   --brand-color: #8f74d3;
   --brand-color-opacity-90: rgb(143, 116, 211, 0.9);
   --bg-color-1: #d2c1ff;
   --bg-color-2: #cfbcff;
-  --bg-color-opacity-1: rgba(210, 193, 255, 0.8);
-  --bg-color-opacity-2: rgba(207, 188, 255, 0.8);
+  --bg-color-opacity-1: rgba(210, 193, 255, 0.75);
+  --bg-color-opacity-2: rgba(207, 188, 255, 0.75);
   --gradient-background: linear-gradient(45deg, #d2c1ff 45%, #cfbcff);
   --gradient-neutral-background: rgba(33, 37, 41, 0.02);
 }
