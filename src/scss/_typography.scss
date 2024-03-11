@@ -6,7 +6,8 @@
   font-weight: 700;
   letter-spacing: 1px;
   padding: 1rem;
-  background-color: var(--main-light-grey);
+  // background-color: var(--main-light-grey);
+  background-color: var(--white-color);
   color: var(--brand-color);
 
   @include viewport-md {
