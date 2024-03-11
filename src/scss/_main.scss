@@ -233,8 +233,10 @@ h1.hero-container__title {
 
 .item-container-list {
   display: block;
-  padding: 0 0 2rem 1rem;
+  padding: 1rem 1rem 2rem 1.5rem;
   list-style: disc;
+  background-color: var(--gradient-neutral-background);
+  border-radius: var(--border-radius-base);
 }
 
 .item-container-list__item {
