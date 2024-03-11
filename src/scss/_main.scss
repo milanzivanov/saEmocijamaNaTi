@@ -61,7 +61,7 @@
   position: relative;
 
   @include viewport-md {
-    background-color: var(--white-color-opacity-60);
+    background-color: var(--white-color);
     display: flex;
     box-shadow: 1px 1px 3px #ddd;
     border-radius: var(--border-radius-base);
@@ -75,7 +75,8 @@
   @include viewport-md {
     width: 55%;
     background: url("/src/img/webp/pupoljakSaLevaNaDesno.webp") bottom left
-      no-repeat var(--white-color-opacity-60);
+      no-repeat;
+    background-color: var(--white-color);
 
     bottom: 25px;
     box-shadow: 1px 1px 3px #ddd;
@@ -184,7 +185,10 @@ h1.hero-container__title {
   position: absolute;
   content: "";
   inset: 0 0 0 0;
-  background-color: var(--bg-color-opacity-1);
+
+  @include viewport-md {
+    background-color: var(--bg-color-opacity-1);
+  }
 }
 
 .program-container {
@@ -252,7 +256,7 @@ h1.hero-container__title {
   flex-direction: column;
   width: 100vw;
   padding: 1rem;
-  background-color: var(--bg-color-1);
+  // background-color: var(--bg-color-1);
 
   @include viewport-md {
     width: 25vw;

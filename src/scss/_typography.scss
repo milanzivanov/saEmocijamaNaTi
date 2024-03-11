@@ -46,13 +46,13 @@
   }
 }
 
-.h3-heading--mobile::before {
-  content: "";
-  position: absolute;
-  inset: 0 0 0 0;
-  z-index: -1;
-  background-color: var(--bg-color-1);
-}
+// .h3-heading--mobile::before {
+//   content: "";
+//   position: absolute;
+//   inset: 0 0 0 0;
+//   z-index: -1;
+//   background-color: var(--bg-color-1);
+// }
 
 .h3-heading--desktop {
   display: none;
@@ -68,7 +68,6 @@
   align-self: flex-end;
   width: 100%;
   position: relative;
-  z-index: 20;
   background-color: var(--brand-color);
   color: var(--white-color);
   font-family: var(--secondery-font-family);
