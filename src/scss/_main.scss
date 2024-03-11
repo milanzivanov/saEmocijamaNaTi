@@ -1,12 +1,12 @@
 .main {
   position: relative;
   background: url("/src/img/webp/pupoljak.webp") bottom right no-repeat,
-    url("/src/img/webp/pattern-img.webp") bottom right repeat;
+    url("/src/img/webp/pattern-img.webp") repeat;
 
   @include viewport-md {
     background: url("/src/img/webp/pupoljak.webp") bottom left no-repeat,
       url("/src/img/webp/cvetic.webp") bottom right no-repeat,
-      url("/src/img/webp/pattern-img.webp") bottom right repeat;
+      url("/src/img/webp/pattern-img.webp") repeat;
   }
 }
 
@@ -258,7 +258,6 @@ h1.hero-container__title {
   flex-direction: column;
   width: 100vw;
   padding: 1rem;
-  // background-color: var(--bg-color-1);
 
   @include viewport-md {
     width: 25vw;
@@ -279,7 +278,7 @@ h1.hero-container__title {
   opacity: 1;
 }
 
-//
+// slide in effect not in use for now
 .from-left {
   transform: translateX(-50%);
 }
