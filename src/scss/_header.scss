@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   position: relative;
-  // background-color: var(--bg-color-2);
+  // background-color: var(--gradient-neutral-background);
 }
 
 .header.sticky {
@@ -26,13 +26,12 @@
 
 .nav-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: transparent;
   padding: 1rem;
 
   @include viewport-md {
-    // background-color: var(--gradient-neutral-background);
     border-bottom-left-radius: var(--border-radius-base);
     border-bottom-right-radius: var(--border-radius-base);
     padding: 1rem 0;
@@ -54,17 +53,25 @@
 }
 
 .nav-list__link {
-  font-size: 0.9025rem;
+  font-size: 1rem;
   font-weight: 400;
   color: var(--main-text-color);
   padding-right: 1.5rem;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: lowercase;
   transition: 0.3s all ease-in-out;
+
+  span {
+    text-transform: capitalize;
+  }
 
   &:hover {
     color: var(--brand-color);
   }
+}
+
+.nav-list__link::first-letter {
+  text-transform: capitalize;
 }
 
 .header-logo {

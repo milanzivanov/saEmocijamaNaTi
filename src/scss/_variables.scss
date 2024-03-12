@@ -18,8 +18,22 @@
   --bg-color-2: #cfbcff;
   --bg-color-opacity-1: rgba(210, 193, 255, 0.75);
   --bg-color-opacity-2: rgba(207, 188, 255, 0.75);
-  --gradient-background: linear-gradient(45deg, #d2c1ff 45%, #cfbcff);
   --gradient-neutral-background: rgba(33, 37, 41, 0.02);
+  --gradient-background: linear-gradient(
+    45deg,
+    #d2c1ff 45%,
+    rgba(255, 255, 255, 0.01)
+  );
+
+  --unhover-border-color: rgba(0, 0, 0, 0.5);
+  --unhover-text-color: rgba(255, 255, 255, 0.5);
+  --unhover-background-color: rgba(0, 0, 0, 0.5);
+
+  --hover-border-color: rgba(0, 0, 0, 0.8);
+  --hover-text-color: rgba(255, 255, 255, 0.8);
+  --hover-background-color: rgba(0, 0, 0, 0.8);
+
+  --transition-delay: 0.5s;
 }
 
 // #952373
