@@ -217,9 +217,10 @@ h1.hero-container__title::first-letter {
   position: relative;
 
   @include viewport-md {
-    margin-bottom: 8rem;
-    background: url("/src/img/webp/cvetic.webp") no-repeat bottom right;
+    background: url("/src/img/webp/frontalniJorgovan.webp") no-repeat bottom
+      right;
   }
+  margin-bottom: 5rem;
 }
 
 .item-container {
@@ -241,23 +242,29 @@ h1.hero-container__title::first-letter {
   position: relative;
   background-color: var(--white-color-opacity-85);
   padding: 0 1rem 1rem 1rem;
-  flex: 1 1 60%;
 
   @include viewport-md {
     padding: 1rem;
   }
 }
 
+.defoult-text--program-info {
+  color: var(--second-text-color);
+  width: 80%;
+}
+
 .item-container-list {
   display: block;
   padding: 1rem 1rem 2rem 1.5rem;
-  list-style: disc;
+  list-style: none;
   background-color: var(--gradient-neutral-background);
   border-radius: var(--border-radius-base);
 }
 
 .item-container-list__item {
-  color: var(--main-text-color);
+  display: flex;
+  align-items: center;
+  color: var(--second-text-color);
   line-height: 1.6;
 
   @include viewport-md {
@@ -265,26 +272,30 @@ h1.hero-container__title::first-letter {
 }
 
 .item-container-list__item--inportant-color {
+  display: flex;
+  align-items: center;
   color: var(--brand-color);
   font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
 }
 
-.item-container--img {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  padding: 1rem;
+// .item-container--img {
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   width: 100vw;
+//   padding: 1rem;
 
-  @include viewport-md {
-    width: 25vw;
-    // background-color: var(--main-light-grey);
-    background: var(--bg-color-2);
-  }
-  @include viewport-ld {
-    width: 15vw;
-  }
-}
+//   @include viewport-md {
+//     width: 25vw;
+//     // background-color: var(--main-light-grey);
+//     background: var(--bg-color-2);
+//   }
+//   @include viewport-ld {
+//     width: 15vw;
+//   }
+// }
 
 // fade in effect
 .fade-in {
