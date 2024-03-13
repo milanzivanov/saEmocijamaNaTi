@@ -1,6 +1,7 @@
 .h2-heading {
   position: relative;
-  font-family: var(--primary-font-family);
+  // font-family: var(--primary-font-family);
+  font-family: var(--secondery-font-family);
   font-size: 1.3rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -18,7 +19,8 @@
 }
 
 .h3-heading {
-  font-family: var(--primary-font-family);
+  // font-family: var(--primary-font-family);
+  font-family: var(--secondery-font-family);
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -55,6 +57,7 @@
 
 .h4-heading {
   font-family: var(--secondery-font-family);
+  color: var(--brand-color);
   position: relative;
   font-size: 0.9rem;
   font-weight: 700;
@@ -63,42 +66,35 @@
   padding: 1rem 0;
 }
 
-.h-heading--contact-color {
+.h5-heading--contact-color {
   text-transform: uppercase;
   color: var(--brand-color);
+  font-weight: 700;
+  padding-bottom: 1rem;
 }
 
-.h4-heading--small {
-  color: var(--brand-color);
-  text-transform: lowercase;
+.h5-heading--small {
+  font-weight: 600;
   padding: 0 0.5rem 0 0;
 }
 
-.h4-heading--small::first-letter {
+.h5-heading--small::first-letter {
   text-transform: uppercase;
 }
 
 .h5-heading {
   display: flex;
   align-items: center;
-  align-self: flex-end;
-  // width: 100%;
   position: relative;
   color: var(--brand-color);
   font-family: var(--secondery-font-family);
   font-size: 0.9rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  // padding: 0.5rem;
-  // margin-top: 1rem;
 
   @include viewport-md {
-    // width: 100%;
     font-weight: 700;
-    padding: 0.5rem;
-    align-self: flex-start;
-    // border-radius: var(--border-radius-base);
-    // overflow: hidden;
+    padding: 0.5rem 0.5rem 0.5rem 0;
   }
 }
 
@@ -116,6 +112,10 @@
   line-height: 1.5;
   text-wrap: pretty;
   padding: 1rem 0;
+}
+
+.defoult-text--about:first-child {
+  text-indent: 5px;
 }
 
 .defoult-text--bb {

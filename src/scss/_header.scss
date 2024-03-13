@@ -97,9 +97,6 @@
 
 // navigation for mobile view
 .nav-container-mobile {
-  position: absolute;
-  background: url("/src/img/webp/pupoljak.webp") no-repeat bottom right,
-    url("/src/img/webp/pattern-img.webp") repeat;
   inset: 0 0 0 0;
   display: unset;
   transform: translate(100%, -100%);
@@ -107,16 +104,17 @@
   align-items: center;
   position: fixed;
   z-index: 21;
+  background-color: var(--bg-color-1);
   transition: all 0.3s ease-in-out;
 }
 
-.nav-container-mobile::before {
-  position: absolute;
-  z-index: 0;
-  content: "";
-  inset: 0 0 0 0;
-  background-color: var(--bg-color-opacity-1);
-}
+// .nav-container-mobile::before {
+//   background: url("/src/img/webp/frontalniJorgovan.webp") no-repeat bottom right;
+//   position: absolute;
+//   z-index: 0;
+//   content: "";
+//   background-color: var(--bg-color-1);
+// }
 
 .nav-container-mobile.active {
   display: flex;
@@ -129,8 +127,12 @@
   text-decoration: none;
   font-size: 1.3rem;
   color: var(--main-text-color);
-  text-transform: uppercase;
+  text-transform: lowercase;
   padding-bottom: 1rem;
+
+  span {
+    text-transform: uppercase;
+  }
 }
 
 .nav-container-mobile__link:hover {
