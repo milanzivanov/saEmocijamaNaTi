@@ -73,6 +73,10 @@ h1.hero-container__title {
   transition: all 0.2s ease-in-out;
 
   @include viewport-md {
+    font-size: 2.3rem;
+  }
+
+  @include viewport-ld {
     font-size: 2.7rem;
   }
 }
@@ -85,9 +89,6 @@ h1.hero-container__title::first-letter {
   display: block;
   // color: var(--brand-color);
   color: var(--second-text-color);
-
-  @include viewport-md {
-  }
 
   span {
     text-transform: uppercase;
