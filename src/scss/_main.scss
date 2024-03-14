@@ -64,7 +64,7 @@ h1.hero-container__title {
   justify-content: center;
   position: relative;
   font-family: var(--primary-font-family);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1.3;
   font-weight: 800;
   text-transform: lowercase;
@@ -181,12 +181,12 @@ h1.hero-container__title::first-letter {
 // emotion phrase
 .emotion-phrase {
   position: relative;
-  padding: 4rem 0;
+  padding: 5rem 0;
   // background: url("/src/img/css-pattern-by-magicpattern.png") repeat;
 
   @include viewport-md {
     // padding: 4rem 0 8rem 0;
-    padding: 6rem 0;
+    padding: 8rem 0;
   }
 }
 
