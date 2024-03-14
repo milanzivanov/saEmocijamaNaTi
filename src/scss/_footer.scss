@@ -5,7 +5,8 @@ footer.contact {
   justify-content: center;
   align-items: center;
   position: relative;
-  background: url("/src/img/webp/pattern-img.webp") repeat;
+  // background: url("/src/img/webp/css-pattern-by-magicpattern.webp") repeat
+  //   bottom right;
   padding: 5rem 0 3rem 0;
 
   @include viewport-md {
@@ -47,7 +48,9 @@ footer.contact::before {
 }
 
 .contact__item:nth-child(2) {
-  background: url("/src/img/webp/frontalniJorgovan.webp") bottom right no-repeat
+  // background: url("/src/img/webp/frontalniJorgovan.webp") bottom right no-repeat
+  //   var(--white-color-opacity-85);
+  background: url("/src/img/webp/sent-logo-main.webp") bottom right no-repeat
     var(--white-color-opacity-85);
   background-size: contain;
   margin-bottom: 0;
