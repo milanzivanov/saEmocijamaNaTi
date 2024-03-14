@@ -44,3 +44,21 @@
   height: 25px;
   margin-right: 10px;
 }
+
+.btn {
+  display: inline-block;
+  background-color: var(--brand-color);
+  color: var(--white-color);
+  border-radius: var(--border-radius-base);
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #9a82d7;
+}
+
+.btn::first-letter {
+  text-transform: uppercase;
+}
