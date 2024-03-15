@@ -7,7 +7,7 @@
 
   // version 2
   // background-image: url("/src/img/webp/marina-in-white.webp"),
-  //   url("/src/img/webp/spring.webp");
+  //   url("https://ik.imagekit.io/milanz/saEmocijamaNaTi/spring_y7LUlBMny.webp");
   // background-position: bottom right, bottom right;
   // background-repeat: no-repeat, no-repeat;
   // background-size: contain, cover;
@@ -181,7 +181,8 @@
 .emotion-phrase {
   position: relative;
   padding: 5rem 0;
-  background: url("/src/img/webp/spring.webp") center center no-repeat;
+  background: url("https://ik.imagekit.io/milanz/saEmocijamaNaTi/spring_y7LUlBMny.webp")
+    center center no-repeat;
   background-size: cover;
 
   @include viewport-md {
