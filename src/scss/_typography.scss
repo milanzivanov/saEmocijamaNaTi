@@ -52,22 +52,6 @@
   padding: 1rem 0;
 }
 
-.h5-heading--contact-color {
-  text-transform: uppercase;
-  color: var(--brand-color);
-  font-weight: 700;
-  padding-bottom: 1rem;
-}
-
-.h5-heading--small {
-  font-weight: 600;
-  padding: 0 0.5rem 0 0;
-}
-
-.h5-heading--small::first-letter {
-  text-transform: uppercase;
-}
-
 .h5-heading {
   display: flex;
   align-items: center;
@@ -77,10 +61,27 @@
   font-size: 0.9rem;
   letter-spacing: 1px;
   text-transform: uppercase;
+  padding: 0.5rem 0.5rem 1rem 1rem;
 
   @include viewport-md {
+    padding: 0.5rem 0.5rem 1rem 0;
     font-weight: 700;
-    padding: 0.5rem 0.5rem 0.5rem 0;
+  }
+}
+
+.h5-heading--contact-color {
+  text-transform: uppercase;
+  color: var(--brand-color);
+  font-weight: 700;
+  padding: 0 0 1rem 1rem;
+}
+
+.h5-heading--small {
+  font-weight: 600;
+  padding: 0 0.5rem 0 0;
+
+  @include viewport-md {
+    padding: 0 0.5rem 0 0;
   }
 }
 
@@ -99,6 +100,10 @@
   line-height: 1.5;
   text-wrap: pretty;
   padding: 1rem 0;
+
+  @include viewport-md {
+    font-size: 1rem;
+  }
 }
 
 .defoult-text--about:first-child {
@@ -113,6 +118,9 @@
   background-color: var(--white-color-opacity-85);
   padding: 1rem;
   box-shadow: 0 0 3px #ddd;
-  border-radius: var(--border-radius-base);
   overflow: hidden;
+
+  @include viewport-md {
+    border-radius: var(--border-radius-base);
+  }
 }

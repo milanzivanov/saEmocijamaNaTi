@@ -4,6 +4,13 @@
   background: transparent;
   background: url("/src/img/webp/marina-in-white.webp") bottom right no-repeat;
   background-size: contain;
+
+  // version 2
+  // background-image: url("/src/img/webp/marina-in-white.webp"),
+  //   url("/src/img/webp/spring.webp");
+  // background-position: bottom right, bottom right;
+  // background-repeat: no-repeat, no-repeat;
+  // background-size: contain, cover;
 }
 
 .main::before {
@@ -11,6 +18,9 @@
   content: "";
   inset: 0 0 0 0;
   background-color: var(--gradient-neutral-background);
+
+  // version 2
+  // background-color: var(--main-light-grey-opacity);
 
   @include viewport-md {
     background: var(--gradient-background);
@@ -108,7 +118,7 @@
   margin-bottom: 1.5rem;
 
   @include viewport-md {
-    padding: 1rem 0 0 0;
+    padding: 0;
     background: none;
     font-size: 1.3rem;
     width: 85%;
@@ -140,9 +150,9 @@
 
   @include viewport-md {
     flex-direction: row;
-    // box-shadow: 1px 0 3px #ddd;
     border-radius: var(--border-radius-base);
     overflow: hidden;
+    // box-shadow: 1px 0 3px #ddd;
   }
 }
 
@@ -166,7 +176,8 @@
 .emotion-phrase {
   position: relative;
   padding: 5rem 0;
-  // background: url("/src/img/css-pattern-by-magicpattern.png") repeat;
+  background: url("/src/img/webp/spring.webp") center center no-repeat;
+  background-size: cover;
 
   @include viewport-md {
     padding: 8rem 0;
@@ -177,7 +188,7 @@
   position: absolute;
   content: "";
   inset: 0 0 0 0;
-  background-color: var(--main-light-grey);
+  background-color: var(--main-light-grey-opacity);
 }
 
 .emotion-phrase--text {
@@ -195,28 +206,28 @@
   }
 }
 
-.emotion-phrase--text::before {
+.emotion-phrase--text::before,
+.emotion-phrase--text::after {
   position: absolute;
   content: "";
-  bottom: 0;
-  left: 1rem;
   height: 5px;
   width: 40%;
-  background-color: var(--brand-color);
+  background-color: var(--second-text-color);
+}
+
+.emotion-phrase--text::before {
+  bottom: 0;
+  left: 1rem;
+
   @include viewport-md {
     width: 30%;
     left: 0;
   }
 }
+
 .emotion-phrase--text::after {
-  position: absolute;
-  content: "";
   top: 0;
   right: 1rem;
-  height: 5px;
-  width: 40%;
-  background-color: var(--brand-color);
-
   @include viewport-md {
     width: 30%;
     right: 0;
@@ -240,8 +251,8 @@
 
 .program-container__item {
   position: relative;
-  background: url("/src/img/webp/frontalniJorgovan.webp") no-repeat bottom right;
   margin-bottom: 5rem;
+  box-shadow: 0 0 3px #ddd;
 }
 
 .item-container {
@@ -302,6 +313,11 @@
 
 .item-container-list__box {
   font-size: 0.9rem;
+
+  // span {
+  //   width: 85%;
+  //   display: flex;
+  // }
 
   @include viewport-md {
     font-size: 1rem;

@@ -32,17 +32,14 @@ footer.contact {
 .contact__item {
   position: relative;
   flex: 1;
-  padding: 1rem;
+  padding: 1rem 0;
   background: none;
   overflow: hidden;
 
   @include viewport-md {
+    padding: 1rem;
     margin-bottom: 0;
   }
-}
-
-.contact__item:nth-child(2) {
-  margin-bottom: 0;
 }
 
 .list__item {
@@ -51,7 +48,11 @@ footer.contact {
   text-transform: capitalize;
   display: flex;
   align-items: center;
-  padding-bottom: 0.5rem;
+  padding: 0 0 0.5rem 1rem;
+
+  @include viewport-md {
+    padding: 0 0 0.5rem;
+  }
 }
 
 .list__item--email-mb {
