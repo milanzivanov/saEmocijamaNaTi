@@ -49,6 +49,11 @@
   position: relative;
   width: 100%;
   padding: 1rem 0 2rem 0;
+  background-color: var(--gradient-neutral-background);
+
+  @include viewport-md {
+    background-color: transparent;
+  }
 }
 
 .main-heading-position {
@@ -210,9 +215,13 @@
 .emotion-phrase--text::after {
   position: absolute;
   content: "";
-  height: 5px;
+  height: 3px;
   width: 40%;
   background-color: var(--second-text-color);
+
+  @include viewport-md {
+    height: 4px;
+  }
 }
 
 .emotion-phrase--text::before {
