@@ -1,7 +1,6 @@
 .header {
   width: 100%;
   position: relative;
-  // background-color: var(--gradient-neutral-background);
 }
 
 .header.sticky {
@@ -107,14 +106,6 @@
   background-color: var(--bg-color-1);
   transition: all 0.3s ease-in-out;
 }
-
-// .nav-container-mobile::before {
-//   background: url("/src/img/webp/frontalniJorgovan.webp") no-repeat bottom right;
-//   position: absolute;
-//   z-index: 0;
-//   content: "";
-//   background-color: var(--bg-color-1);
-// }
 
 .nav-container-mobile.active {
   display: flex;

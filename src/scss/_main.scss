@@ -51,12 +51,10 @@
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-  // background: url("/src/img/webp/marina-in-white.webp") no-repeat bottom right;
-  // background-size: contain;
-  background-color: var(--white-color-opacity-85);
-  padding: 1rem 0 2rem 1rem;
 
   @include viewport-md {
+    background-color: var(--white-color-opacity-85);
+    padding: 1rem 0 2rem 1rem;
     border-radius: var(--border-radius-base);
     width: 75%;
   }
@@ -73,10 +71,11 @@
   font-weight: 800;
   text-transform: lowercase;
   letter-spacing: 2px;
-  padding: 0 0 0.5rem 0;
+  padding: 0 0 0.5rem 1rem;
   transition: all 0.2s ease-in-out;
 
   @include viewport-md {
+    padding: 0 0 0.5rem 0;
     font-size: 2.3rem;
   }
 
@@ -102,11 +101,13 @@
   width: 100%;
   font-size: 0.9rem;
   color: var(--second-text-color);
-  padding: 0;
+  background-color: var(--white-color-opacity-85);
+  padding: 1rem 0 1rem 1rem;
   margin-bottom: 1.5rem;
 
   @include viewport-md {
     padding: 1rem 0 0 0;
+    background: none;
     font-size: 1.3rem;
     width: 85%;
   }
@@ -116,34 +117,28 @@
   display: flex;
   justify-content: flex-start;
   width: 100%;
+  padding: 0 0 0 1rem;
+
+  @include viewport-md {
+    padding: 0;
+  }
 }
 
 // about
 .about {
   position: relative;
   background-color: var(--white-color);
-  // @include viewport-md {
-  //   background: url("/src/img/webp/procvetali-jorgovani.webp") no-repeat bottom
-  //       left,
-  //     url("/src/img/webp/pattern-img.webp") repeat;
-  // }
 }
-
-// .about::before {
-//   position: absolute;
-//   content: "";
-//   inset: 0 0 0 0;
-// }
 
 .about-container {
   position: relative;
   display: flex;
   flex-direction: column;
-  // box-shadow: 1px 0 3px #ddd;
   background-color: var(--white-color);
 
   @include viewport-md {
     flex-direction: row;
+    // box-shadow: 1px 0 3px #ddd;
     border-radius: var(--border-radius-base);
     overflow: hidden;
   }
@@ -151,11 +146,6 @@
 
 .about-container__item--img {
   position: relative;
-
-  // background: url("/src/img/webp/marina-in-red-front.webp") no-repeat bottom
-  //   left;
-  // background-size: contain;
-
   background-color: var(--main-light-grey);
 }
 
@@ -177,7 +167,6 @@
   // background: url("/src/img/css-pattern-by-magicpattern.png") repeat;
 
   @include viewport-md {
-    // padding: 4rem 0 8rem 0;
     padding: 8rem 0;
   }
 }
@@ -240,24 +229,7 @@
 .program {
   position: relative;
   background-color: var(--gradient-neutral-background);
-  // background-color: var(--main-light-grey);
-  // overflow: hidden;
-
-  // @include viewport-md {
-  //   background: url("/src/img/webp/pupoljak.webp") no-repeat bottom right,
-  //     url("/src/img/webp/pattern-img.webp") repeat;
-  // }
 }
-
-// .program::before {
-//   position: absolute;
-//   content: "";
-//   inset: 0 0 0 0;
-
-//   @include viewport-md {
-//     background-color: var(--bg-color-opacity-1);
-//   }
-// }
 
 .program-container {
   display: flex;
@@ -342,23 +314,6 @@
   text-transform: uppercase;
   font-size: 0.8rem;
 }
-
-// .item-container--img {
-//   position: relative;
-//   display: flex;
-//   flex-direction: column;
-//   width: 100vw;
-//   padding: 1rem;
-
-//   @include viewport-md {
-//     width: 25vw;
-//     // background-color: var(--main-light-grey);
-//     background: var(--bg-color-2);
-//   }
-//   @include viewport-ld {
-//     width: 15vw;
-//   }
-// }
 
 // fade in effect
 .fade-in {
