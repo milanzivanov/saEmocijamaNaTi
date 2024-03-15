@@ -27,9 +27,11 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  padding-top: 0;
+
   @include viewport-ld {
     align-items: inherit;
-    padding-top: 8rem;
+    padding-top: 10rem;
   }
 }
 
