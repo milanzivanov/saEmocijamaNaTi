@@ -27,10 +27,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--gradient-neutral-background);
   padding: 1rem;
 
   @include viewport-md {
+    background-color: var(--gradient-neutral-background);
     border-bottom-left-radius: var(--border-radius-base);
     border-bottom-right-radius: var(--border-radius-base);
     padding: 1rem 0;
