@@ -52,8 +52,8 @@
   flex-direction: column;
   align-items: flex-start;
   // background: url("/src/img/webp/marina-in-white.webp") no-repeat bottom right;
-  background-color: var(--white-color-opacity-85);
   // background-size: contain;
+  background-color: var(--white-color-opacity-85);
   padding: 1rem 0 2rem 1rem;
 
   @include viewport-md {

@@ -5,8 +5,7 @@ footer.contact {
   justify-content: center;
   align-items: center;
   position: relative;
-  // background: url("/src/img/webp/css-pattern-by-magicpattern.webp") repeat
-  //   bottom right;
+  background-color: var(--brand-color-opacity-90);
   padding: 5rem 0 3rem 0;
 
   @include viewport-md {
@@ -14,21 +13,18 @@ footer.contact {
   }
 }
 
-footer.contact::before {
-  position: absolute;
-  content: "";
-  inset: 0 0 0 0;
-  background-color: var(--brand-color-opacity-90);
-}
-
 .contact__container {
   display: flex;
   flex-direction: column;
-  padding: 0.5rem;
+  background-color: var(--second-light-grey);
 
   @include viewport-md {
+    background: url("/src/img/webp/saEmocijamaNaTi-logo.webp") bottom right
+      no-repeat;
+    background-size: contain;
+    background-color: var(--second-light-grey);
     flex-direction: row;
-    gap: 1rem;
+    border-radius: var(--border-radius-base);
     padding: 1rem;
   }
 }
@@ -37,10 +33,8 @@ footer.contact::before {
   position: relative;
   flex: 1;
   padding: 1rem;
-  margin-bottom: 0.5rem;
-  border-radius: var(--border-radius-base);
+  background: none;
   overflow: hidden;
-  background-color: var(--white-color-opacity-85);
 
   @include viewport-md {
     margin-bottom: 0;
@@ -48,11 +42,6 @@ footer.contact::before {
 }
 
 .contact__item:nth-child(2) {
-  // background: url("/src/img/webp/frontalniJorgovan.webp") bottom right no-repeat
-  //   var(--white-color-opacity-85);
-  background: url("/src/img/webp/sent-logo-main.webp") bottom right no-repeat
-    var(--white-color-opacity-85);
-  background-size: contain;
   margin-bottom: 0;
 }
 
@@ -98,7 +87,7 @@ footer.contact::before {
 
   @include viewport-md {
     font-size: 0.8rem;
-    padding: 1rem;
+    padding: 1rem 0 0 0;
   }
 
   a {
