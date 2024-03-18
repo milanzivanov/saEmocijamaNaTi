@@ -36,8 +36,9 @@
   height: calc(100vh - var(--headerHeight));
   width: 100%;
   justify-content: space-between;
-  align-items: center;
-  padding-top: 0;
+  padding-top: 12rem;
+  // align-items: center;
+  // padding-top: 0;
 
   @include viewport-ld {
     align-items: inherit;
