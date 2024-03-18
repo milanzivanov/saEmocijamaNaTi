@@ -36,9 +36,9 @@
   height: calc(100vh - var(--headerHeight));
   width: 100%;
   justify-content: space-between;
-  padding-top: 12rem;
-  // align-items: center;
-  // padding-top: 0;
+  // padding-top: 8rem;
+  align-items: center;
+  padding-top: 0;
 
   @include viewport-ld {
     align-items: inherit;
@@ -120,7 +120,9 @@
   width: 100%;
   font-size: 0.9rem;
   color: var(--second-text-color);
-  background-color: var(--white-color-opacity-85);
+  // background-color: var(--white-color-opacity-85);
+  background-color: rgb(255, 255, 255, 0.35);
+
   padding: 1rem 0 1rem 1rem;
   margin-bottom: 1.5rem;
 
