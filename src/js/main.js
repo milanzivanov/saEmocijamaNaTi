@@ -51,10 +51,13 @@ document.addEventListener("DOMContentLoaded", function () {
     showItem((index + 1) % items.length);
   });
 
-  // autoshow
-  // setInterval(function () {
-  //   console.log("working");
-  // }, 5000);
+  function nextItem() {
+    let index = [...items].findIndex((item) =>
+      item.classList.contains("active")
+    );
+    showItem((index + 1) % items.length);
+  }
+  setInterval(nextItem, 10000);
 
   // Event listeners for dots
   dots.forEach((dot) => {
