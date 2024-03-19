@@ -44,21 +44,17 @@ document.addEventListener("DOMContentLoaded", function () {
     showItem((index - 1 + items.length) % items.length);
   });
 
-  // document.querySelector(".next").addEventListener("click", () => {
-  //   let index = [...items].findIndex((item) =>
-  //     item.classList.contains("active")
-  //   );
-  //   showItem((index + 1) % items.length);
-  // });
+  document.querySelector(".next").addEventListener("click", () => {
+    let index = [...items].findIndex((item) =>
+      item.classList.contains("active")
+    );
+    showItem((index + 1) % items.length);
+  });
 
-  setInterval(function () {
-    document.querySelector(".next").addEventListener("click", () => {
-      let index = [...items].findIndex((item) =>
-        item.classList.contains("active")
-      );
-      showItem((index + 1) % items.length);
-    });
-  }, 3000);
+  // autoshow
+  // setInterval(function () {
+  //   console.log("working");
+  // }, 5000);
 
   // Event listeners for dots
   dots.forEach((dot) => {
