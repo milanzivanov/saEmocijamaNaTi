@@ -1,38 +1,75 @@
 import "../scss/style.scss";
 
 // sider
-// document.addEventListener("DOMContentLoaded", () => {
-//   const buttons = document.querySelectorAll("[data-slide-direction]");
+document.addEventListener("DOMContentLoaded", function () {
+  let carousel = document.querySelector(".carousel");
+  let getCarouselHeight = document.querySelector(".carousel-container");
+  let items = carousel.querySelectorAll(".carousel__item");
+  let dotsContainer = document.querySelector(".dots");
 
-//   buttons.forEach((button) => {
-//     button.addEventListener("click", () => {
-//       const offset = button.dataset.slideDirection === "next" ? 1 : -1;
-//       changeSlide(offset);
-//     });
-//   });
+  // Equel height to all items
+  let elemHgt = getCarouselHeight.clientHeight;
+  items.forEach(function (element) {
+    element.style.height = elemHgt + "px";
+  });
 
-//   const changeSlide = (offset) => {
-//     const slides = document.querySelector(".slides");
-//     const activeSlide = slides.querySelector("[data-active-slide]");
-//     const circles = document.querySelector(".slides-circles");
-//     const activeCircle = circles.querySelector("[data-active-slide]");
+  // Insert dots into the DOM
+  items.forEach((_, index) => {
+    let dot = document.createElement("span");
+    dot.classList.add("dot");
+    if (index === 0) dot.classList.add("active");
+    dot.dataset.index = index;
+    dotsContainer.appendChild(dot);
+  });
 
-//     let newIndex = [...slides.children].indexOf(activeSlide) + offset;
-//     newIndex =
-//       newIndex < 0
-//         ? slides.children.length - 1
-//         : newIndex === slides.children.length
-//         ? 0
-//         : newIndex;
-//     slides.children[newIndex].dataset.activeSlide = true;
-//     delete activeSlide.dataset.activeSlide;
+  let dots = document.querySelectorAll(".dot");
 
-//     circles.children[newIndex].dataset.activeSlide = true;
-//     delete activeCircle.dataset.activeSlide;
-//   };
-//   setInterval(changeSlide.bind(null, 1), 6000);
-// });
+  // Function to show a specific item
+  function showItem(index) {
+    items.forEach((item, idx) => {
+      item.classList.remove("active");
+      dots[idx].classList.remove("active");
+      if (idx === index) {
+        item.classList.add("active");
+        dots[idx].classList.add("active");
+      }
+    });
+  }
 
+  // Event listeners for buttons
+  document.querySelector(".prev").addEventListener("click", () => {
+    let index = [...items].findIndex((item) =>
+      item.classList.contains("active")
+    );
+    showItem((index - 1 + items.length) % items.length);
+  });
+
+  // document.querySelector(".next").addEventListener("click", () => {
+  //   let index = [...items].findIndex((item) =>
+  //     item.classList.contains("active")
+  //   );
+  //   showItem((index + 1) % items.length);
+  // });
+
+  setInterval(function () {
+    document.querySelector(".next").addEventListener("click", () => {
+      let index = [...items].findIndex((item) =>
+        item.classList.contains("active")
+      );
+      showItem((index + 1) % items.length);
+    });
+  }, 3000);
+
+  // Event listeners for dots
+  dots.forEach((dot) => {
+    dot.addEventListener("click", () => {
+      let index = parseInt(dot.dataset.index);
+      showItem(index);
+    });
+  });
+});
+
+////////////////////
 // dinamic height
 function setHeaderHeight() {
   const headerHeight = document.querySelector(".header");

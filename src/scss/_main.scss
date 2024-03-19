@@ -1,11 +1,6 @@
 .main {
   position: relative;
   z-index: 10;
-  // background: transparent;
-  // background: url("/src/img/webp/marina-in-white.webp") bottom right no-repeat;
-  // background-size: contain;
-
-  // version 2
   background-image: url("/src/img/webp/marina-in-white.webp"),
     url("https://ik.imagekit.io/milanz/saEmocijamaNaTi/spring_y7LUlBMny.webp");
   background-position: bottom right, bottom right;
@@ -17,14 +12,7 @@
   position: absolute;
   content: "";
   inset: 0 0 0 0;
-
-  // version 2
-  // background-color: var(--main-light-grey-opacity);
   background-color: var(--bg-color-opacity-1);
-
-  // @include viewport-md {
-  //   background-color: var(--gradient-neutral-background);
-  // }
 }
 
 .hero {
@@ -36,7 +24,6 @@
   height: calc(100vh - var(--headerHeight));
   width: 100%;
   justify-content: space-between;
-  // padding-top: 8rem;
   align-items: center;
   padding-top: 0;
 
@@ -109,7 +96,7 @@
 
 .main__title--block {
   display: block;
-  color: var(--second-text-color);
+  color: var(--main-text-color);
 
   span {
     text-transform: uppercase;
@@ -120,7 +107,6 @@
   width: 100%;
   font-size: 0.9rem;
   color: var(--second-text-color);
-  // background-color: var(--white-color-opacity-85);
   background-color: rgb(255, 255, 255, 0.35);
 
   padding: 1rem 0 1rem 1rem;
@@ -161,7 +147,7 @@
     flex-direction: row;
     border-radius: var(--border-radius-base);
     overflow: hidden;
-    // box-shadow: 1px 0 3px #ddd;
+    box-shadow: 1px 0 3px #ddd;
   }
 }
 
@@ -265,6 +251,7 @@
 
 .program-container__item {
   position: relative;
+  background: url("/src/img/webp/frontalniJorgovan.webp") no-repeat bottom right;
   margin-bottom: 5rem;
   box-shadow: 0 0 3px #ddd;
 }
@@ -327,11 +314,6 @@
 
 .item-container-list__box {
   font-size: 0.9rem;
-
-  // span {
-  //   width: 85%;
-  //   display: flex;
-  // }
 
   @include viewport-md {
     font-size: 1rem;
