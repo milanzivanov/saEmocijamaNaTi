@@ -4,6 +4,7 @@
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 700;
+  font-style: italic;
   letter-spacing: 1px;
   padding: 1rem;
   background-color: var(--white-color);
@@ -22,9 +23,10 @@
   font-family: var(--secondery-font-family);
   font-size: 1rem;
   font-weight: 700;
+  font-style: italic;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--second-text-color);
+  color: var(--brand-color);
 
   @include viewport-ld {
     font-size: 1.1rem;
@@ -48,7 +50,7 @@
   bottom: 0;
   width: 100%;
   height: 3px;
-  background-color: var(--second-text-color);
+  background-color: var(--brand-color);
 }
 
 .h4-heading {

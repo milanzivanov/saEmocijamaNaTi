@@ -107,7 +107,7 @@
   width: 100%;
   font-size: 0.9rem;
   color: var(--main-text-color);
-  background-color: rgb(255, 255, 255, 0.35);
+  background-color: rgb(255, 255, 255, 0.5);
 
   padding: 1rem 0 1rem 1rem;
   margin-bottom: 1.5rem;
@@ -190,6 +190,7 @@
 .emotion-phrase--text {
   position: relative;
   font-size: 1.5rem;
+  font-style: italic;
   text-indent: 5px;
   letter-spacing: 2px;
   font-weight: 700;
