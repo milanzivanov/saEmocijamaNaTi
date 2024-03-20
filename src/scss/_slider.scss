@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   background-color: var(--white-color);
-  padding: 1rem;
+  padding: 2rem 1rem;
   box-shadow: 1px 0 3px #ddd;
 
   @include viewport-md {
@@ -58,6 +58,7 @@
 
 .swiper-pagination-progressbar {
   background: var(--main-light-grey);
+  height: 3px;
   .swiper-pagination-progressbar-fill {
     background-color: var(--brand-color);
   }

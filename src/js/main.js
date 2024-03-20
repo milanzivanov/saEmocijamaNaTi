@@ -14,7 +14,7 @@ var swiper = new Swiper(".swiper", {
     clickable: true
   },
   autoplay: {
-    delay: 15000
+    delay: 10000
   }
 });
 
@@ -25,7 +25,7 @@ let items = carousel.querySelectorAll(".swiper-slide");
 
 let elemHgt = getHeight.clientHeight;
 items.forEach(function (element) {
-  element.style.height = elemHgt + 15 + "px";
+  element.style.height = elemHgt + 20 + "px";
 });
 
 ////////////////////
