@@ -11,6 +11,10 @@
               složimo kockice u glavi, upoznamo se i pomirimo sa svojim
               osećanjima te živimo život u svoj njegovoj punoći i lepoti."
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <title>Sa emocijama na ti | Marina Perežanin</title>
   </head>
   <body>
@@ -168,6 +172,7 @@
       </div>
     </section>
 
+    <!-- phrase -->
     <section class="emotion-phrase fade-in">
       <div class="wrapper">
         <p class="emotion-phrase--text">
@@ -177,8 +182,73 @@
       </div>
     </section>
 
-    <!-- slider -->
+    <!-- swiper slider -->
     <section class="emotion" id="emotion">
+      <h2 class="wrapper h2-heading">o sa emocijama na ti</h2>
+      <div class="wrapper">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="carousel__caption">
+                <p>
+                  program <span>"Sa Emocijama na Ti"</span> je inovativni set
+                  radionica i programa namenjenih osnaživanju pojedinaca kroz
+                  razumevanje emocija i odnosa. Naša misija je pružiti sigurno
+                  okruženje za osvešćivanje i učenje veština koje će svakome
+                  omogućiti bolje upravljanje emocijama i interpersonalnim
+                  odnosima.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="carousel__caption">
+                <p>
+                  vizija programa je stvoriti zajednicu ljudi koji su
+                  emocionalno pismeniji, samosvesniji i sposobni za zdravije
+                  emotivno povezivanje. Osnovni cilj je da omogućimo ljudima da
+                  uvide i razumeju svoje emocionalne reakcije, te da unaprede
+                  svoje veštine u rešavanju konflikata, izražavanju empatije i
+                  otvaranju srca.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="carousel__caption">
+                <p>
+                  program <span>"Sa Emocijama na Ti"</span> detaljno obrađuje
+                  pojedine emocije i pruža priliku za vežbanje veština otvaranja
+                  srca, oproštaja i izvinjenja, doprinoseći dubljem emotivnom
+                  razumevanju i razvoju emocionalne inteligencije.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="carousel__caption">
+                <p>
+                  naša vizija je pružiti praktične alate i iskustva koja će biti
+                  od neprocenjive vrednosti u ličnom razvoju i emocionalnom
+                  osnaživanju pojedinaca. Ovim putem, verujemo da možemo
+                  ostvariti duboke promene u načinu na koji ljudi doživljavaju i
+                  upravljaju sopstvenim emocionalnim svetom.
+                </p>
+              </div>
+            </div>
+            <!-- Add more slides as needed -->
+          </div>
+          <!-- If you want pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev" id="my-prev-button"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- slider -->
+    <!-- <section class="emotion" id="emotion">
       <h2 class="wrapper h2-heading padding--b">o sa emocijama na ti</h2>
       <div class="wrapper carousel-container">
         <div class="carousel">
@@ -262,7 +332,7 @@
         </button>
         <div class="dots"></div>
       </div>
-    </section>
+    </section> -->
 
     <!-- program -->
     <section class="program section" id="program">
@@ -643,6 +713,8 @@
       </a>
     </div>
 
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script type="module" src="./src/js/main.js"></script>
     <script
       type="module"
