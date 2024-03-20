@@ -2,7 +2,6 @@ import "../scss/style.scss";
 
 // Initialize Swiper
 var swiper = new Swiper(".swiper", {
-  // Optional parameters
   loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -11,6 +10,7 @@ var swiper = new Swiper(".swiper", {
   pagination: {
     el: ".swiper-pagination",
     dynamicBullets: true,
+    type: "progressbar",
     clickable: true
   },
   autoplay: {
@@ -18,76 +18,15 @@ var swiper = new Swiper(".swiper", {
   }
 });
 
-// sider
-// document.addEventListener("DOMContentLoaded", function () {
-//   let carousel = document.querySelector(".carousel");
-//   let getCarouselHeight = document.querySelector(".carousel-container");
-// let items = carousel.querySelectorAll(".carousel__item");
-//   let dotsContainer = document.querySelector(".dots");
-
+// Equel height to all items in slider
 let carousel = document.querySelector(".swiper");
 let getHeight = document.querySelector(".swiper-slide");
 let items = carousel.querySelectorAll(".swiper-slide");
-// Equel height to all items
+
 let elemHgt = getHeight.clientHeight;
 items.forEach(function (element) {
-  element.style.height = elemHgt + "px";
+  element.style.height = elemHgt + 15 + "px";
 });
-
-//   // Insert dots into the DOM
-//   items.forEach((_, index) => {
-//     let dot = document.createElement("span");
-//     dot.classList.add("dot");
-//     if (index === 0) dot.classList.add("active");
-//     dot.dataset.index = index;
-//     dotsContainer.appendChild(dot);
-//   });
-
-//   let dots = document.querySelectorAll(".dot");
-
-//   // Function to show a specific item
-//   function showItem(index) {
-//     items.forEach((item, idx) => {
-//       item.classList.remove("active");
-//       dots[idx].classList.remove("active");
-//       if (idx === index) {
-//         item.classList.add("active");
-//         dots[idx].classList.add("active");
-//       }
-//     });
-//   }
-
-//   // Event listeners for buttons
-//   document.querySelector(".prev").addEventListener("click", () => {
-//     let index = [...items].findIndex((item) =>
-//       item.classList.contains("active")
-//     );
-//     showItem((index - 1 + items.length) % items.length);
-//   });
-
-//   document.querySelector(".next").addEventListener("click", () => {
-//     let index = [...items].findIndex((item) =>
-//       item.classList.contains("active")
-//     );
-//     showItem((index + 1) % items.length);
-//   });
-
-//   function nextItem() {
-//     let index = [...items].findIndex((item) =>
-//       item.classList.contains("active")
-//     );
-//     showItem((index + 1) % items.length);
-//   }
-//   setInterval(nextItem, 10000);
-
-//   // Event listeners for dots
-//   dots.forEach((dot) => {
-//     dot.addEventListener("click", () => {
-//       let index = parseInt(dot.dataset.index);
-//       showItem(index);
-//     });
-//   });
-// });
 
 ////////////////////
 // dinamic height
