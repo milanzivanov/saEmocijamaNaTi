@@ -37,7 +37,7 @@
   position: relative;
   width: 100%;
   padding: 1rem 0 2rem 0;
-  background-color: var(--gradient-neutral-background);
+  background-color: var(--gradient-neutral-background-2);
 
   @include viewport-md {
     background-color: transparent;
@@ -96,7 +96,7 @@
 
 .main__title--block {
   display: block;
-  color: var(--main-text-color);
+  color: var(--second-text-color);
 
   span {
     text-transform: uppercase;
@@ -105,9 +105,8 @@
 
 .defoult-text--hero {
   width: 100%;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: var(--main-text-color);
-  background-color: rgb(255, 255, 255, 0.5);
 
   padding: 1rem 0 1rem 1rem;
   margin-bottom: 1.5rem;
