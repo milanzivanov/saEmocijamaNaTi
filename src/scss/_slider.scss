@@ -64,6 +64,13 @@
   }
 }
 
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 15px;
+}
+
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;

@@ -10,11 +10,20 @@ var swiper = new Swiper(".swiper", {
   pagination: {
     el: ".swiper-pagination",
     dynamicBullets: true,
-    type: "progressbar",
     clickable: true
   },
   autoplay: {
     delay: 10000
+  },
+  breakpoints: {
+    769: {
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: false,
+        type: "progressbar",
+        clickable: true
+      }
+    }
   }
 });
 
