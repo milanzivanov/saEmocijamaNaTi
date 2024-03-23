@@ -131,10 +131,12 @@
 .defoult-text--footer {
   background-color: var(--white-color-opacity-85);
   padding: 1rem;
+  border-top: 3px solid var(--brand-color);
   box-shadow: 0 0 3px #ddd;
   overflow: hidden;
 
   @include viewport-md {
-    border-radius: var(--border-radius-base);
+    border-bottom-left-radius: var(--border-radius-base);
+    border-bottom-right-radius: var(--border-radius-base);
   }
 }
