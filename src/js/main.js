@@ -27,6 +27,17 @@ var swiper = new Swiper(".swiper", {
   }
 });
 
+// btn ripple effect
+const btnEl = document.querySelector(".btn");
+
+btnEl.addEventListener("mouseover", (event) => {
+  const x = event.pageX - btnEl.offsetLeft;
+  const y = event.pageY - btnEl.offsetTop;
+
+  btnEl.style.setProperty("--xPos", x + "px");
+  btnEl.style.setProperty("--yPos", y + "px");
+});
+
 // Equel height to all items in slider
 let carousel = document.querySelector(".swiper");
 let getHeight = document.querySelector(".swiper-slide");

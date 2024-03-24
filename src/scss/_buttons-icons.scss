@@ -46,17 +46,37 @@
 }
 
 .btn {
+  position: relative;
   display: inline-block;
   background-color: var(--brand-color);
   color: var(--white-color);
   border-radius: var(--border-radius-base);
   text-decoration: none;
   padding: 0.5rem 2rem;
-  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+
+  span {
+    position: relative;
+    z-index: 1;
+  }
 }
 
-.btn:hover {
+.btn::before {
+  content: "";
+  position: absolute;
   background-color: #9a82d7;
+  width: 0;
+  height: 0;
+  left: var(--xPos);
+  top: var(--yPos);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: width 0.5s, height 0.5s;
+}
+
+.btn:hover::before {
+  width: 500px;
+  height: 500px;
 }
 
 .btn::first-letter {
