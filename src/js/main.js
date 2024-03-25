@@ -31,11 +31,13 @@ var swiper = new Swiper(".swiper", {
 const btnEl = document.querySelector(".btn");
 
 btnEl.addEventListener("mouseover", (event) => {
-  const x = event.pageX - btnEl.offsetLeft;
-  const y = event.pageY - btnEl.offsetTop;
+  const x = event.pageX - btnEl.offsetX;
+  const y = event.pageY - btnEl.offsetY;
 
   btnEl.style.setProperty("--xPos", x + "px");
   btnEl.style.setProperty("--yPos", y + "px");
+
+  console.log(event);
 });
 
 // Equel height to all items in slider
