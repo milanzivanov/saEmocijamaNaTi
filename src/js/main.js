@@ -31,14 +31,20 @@ var swiper = new Swiper(".swiper", {
 const btnEl = document.querySelector(".btn");
 
 btnEl.addEventListener("mouseover", (event) => {
-  const x = event.pageX - btnEl.offsetX;
-  const y = event.pageY - btnEl.offsetY;
-
+  const x = event.pageX - btnEl.offsetLeft;
+  const y = event.pageY - btnEl.offsetTop;
   btnEl.style.setProperty("--xPos", x + "px");
   btnEl.style.setProperty("--yPos", y + "px");
-
-  console.log(event);
 });
+
+// with destructuring
+// btnEl.addEventListener("mouseover", (event) => {
+//   const { pageX, pageY } = event;
+//   const { offsetLeft, offsetTop } = btnEl;
+
+//   btnEl.style.setProperty("--xPos", `${pageX - offsetLeft}px`);
+//   btnEl.style.setProperty("--yPos", `${pageY - offsetTop}px`);
+// });
 
 // Equel height to all items in slider
 let carousel = document.querySelector(".swiper");
