@@ -35,6 +35,8 @@ btnEl.addEventListener("mouseover", (event) => {
   const y = event.pageY - btnEl.offsetTop;
   btnEl.style.setProperty("--xPos", x + "px");
   btnEl.style.setProperty("--yPos", y + "px");
+
+  console.log(btnEl);
 });
 
 // with destructuring
