@@ -13,6 +13,12 @@ footer.contact {
   }
 }
 
+.h2-heading--container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
 .contact__container {
   display: flex;
   flex-direction: column;
