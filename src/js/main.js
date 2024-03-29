@@ -35,8 +35,6 @@ btnEl.addEventListener("mouseover", (event) => {
   const y = event.pageY - btnEl.offsetTop;
   btnEl.style.setProperty("--xPos", x + "px");
   btnEl.style.setProperty("--yPos", y + "px");
-
-  console.log(btnEl);
 });
 
 // with destructuring
@@ -148,7 +146,7 @@ headerObserver.observe(main);
 /////////////////////////////
 // Scroll to section with event delagation better approach
 document.querySelector(".nav-list").addEventListener("click", function (e) {
-  e.preventDefault();
+  // e.preventDefault();
 
   // Matching strategy
   if (e.target.classList.contains("nav-list__link")) {

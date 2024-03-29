@@ -1,4 +1,3 @@
-//
 .svg-icon {
   position: relative;
   cursor: pointer;
@@ -17,6 +16,7 @@
 }
 
 .svg-icon--btt {
+  stroke: var(--second-text-color);
   height: 2rem;
   width: 2rem;
 
@@ -75,7 +75,8 @@
   transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
-.btn:hover::before {
+.btn:hover::before,
+.btn:active::before {
   width: 500px;
   height: 500px;
 }

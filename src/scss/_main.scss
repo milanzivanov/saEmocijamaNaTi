@@ -362,7 +362,6 @@
   position: relative;
   cursor: pointer;
   display: none;
-  background-color: var(--main-light-grey);
   box-shadow: 1px 1px 5px #ddd;
   position: fixed;
   padding: 10px;
@@ -379,7 +378,13 @@
   }
 }
 
-.back-to-top-container:hover {
+.back-to-top-container:link,
+.back-to-top-container:visited {
+  background-color: var(--main-light-grey);
+}
+
+.back-to-top-container:hover,
+.back-to-top-container:active {
   background-color: var(--brand-color);
 
   .svg-icon {
