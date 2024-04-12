@@ -1,7 +1,12 @@
+// import Swiper bundle with all modules installed
+import Swiper from "swiper/bundle";
+// import styles bundle
+import "swiper/css/bundle";
+
 import "../scss/style.scss";
 
 // Initialize Swiper
-var swiper = new Swiper(".swiper", {
+let swiper = new Swiper(".swiper", {
   loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -213,3 +218,24 @@ faders.forEach((fader) => {
 sliders.forEach((slider) => {
   appearOnScroll.observe(slider);
 });
+
+// active link
+// document.querySelectorAll(".nav-list__link").forEach((link) => {
+//   console.log(link.href, window.location.href);
+//   if (link.href === window.location.href) {
+//     link.setAttribute("aria-current", "page");
+//   }
+// });
+
+// Add active class to the current button (highlight it)
+// const header2 = document.querySelector(".nav-list");
+// const btns = header2.querySelectorAll(".nav-list__link");
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function () {
+//     let current = document.getElementsByClassName("active");
+//     if (current.length > 0) {
+//       current[0].className = current[0].className.replace(" active", "");
+//     }
+//     this.className += " active";
+//   });
+// }
