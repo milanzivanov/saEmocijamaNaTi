@@ -71,7 +71,7 @@
   font-family: var(--primary-font-family);
   font-size: 1.5rem;
   line-height: 1.3;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: lowercase;
   letter-spacing: 2px;
   padding: 0 0 0.5rem 1rem;
@@ -277,16 +277,6 @@
   }
 }
 
-.defoult-text--program-info {
-  color: var(--second-text-color);
-  width: 100%;
-  text-indent: 5px;
-
-  @include viewport-md {
-    width: 80%;
-  }
-}
-
 .item-container-list {
   display: block;
   padding: 1rem;
@@ -371,6 +361,7 @@
   right: 10px;
   border-radius: var(--border-radius-base);
   transition: all 0.3s ease-in-out;
+  background-color: var(--main-light-grey);
 
   @include viewport-ld {
     transform: none;

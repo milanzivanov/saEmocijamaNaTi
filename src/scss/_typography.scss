@@ -31,7 +31,7 @@
 .h3-heading {
   position: relative;
   font-family: var(--secondery-font-family);
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
   font-style: italic;
   letter-spacing: 2px;
@@ -50,7 +50,7 @@
 
   @include viewport-md {
     display: inline-block;
-    width: 30%;
+    width: 40%;
   }
 }
 
@@ -135,6 +135,16 @@
 
 .defoult-text--bb {
   border-bottom: 1px solid #ddd;
+}
+
+.defoult-text--program-info {
+  color: var(--second-text-color);
+  width: 100%;
+  text-indent: 5px;
+
+  @include viewport-md {
+    width: 80%;
+  }
 }
 
 .defoult-text--footer {

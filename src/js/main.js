@@ -15,7 +15,7 @@ let swiper = new Swiper(".swiper", {
     clickable: true
   },
   autoplay: {
-    delay: 10000
+    delay: 20000
   },
   breakpoints: {
     769: {
@@ -38,15 +38,6 @@ btnEl.addEventListener("mouseover", (event) => {
   btnEl.style.setProperty("--xPos", x + "px");
   btnEl.style.setProperty("--yPos", y + "px");
 });
-
-// with destructuring
-// btnEl.addEventListener("mouseover", (event) => {
-//   const { pageX, pageY } = event;
-//   const { offsetLeft, offsetTop } = btnEl;
-
-//   btnEl.style.setProperty("--xPos", `${pageX - offsetLeft}px`);
-//   btnEl.style.setProperty("--yPos", `${pageY - offsetTop}px`);
-// });
 
 // Equel height to all items in slider
 let carousel = document.querySelector(".swiper");
@@ -148,8 +139,6 @@ headerObserver.observe(main);
 /////////////////////////////
 // Scroll to section with event delagation better approach
 document.querySelector(".nav-list").addEventListener("click", function (e) {
-  // e.preventDefault();
-
   // Matching strategy
   if (e.target.classList.contains("nav-list__link")) {
     const id = e.target.getAttribute("href");
