@@ -46,7 +46,7 @@
 .h3-heading--desktop {
   position: relative;
   display: flex;
-  padding: 1em 0 1rem 0;
+  padding: 1em 0 0.5rem 0;
 
   @include viewport-md {
     display: inline-block;
@@ -72,7 +72,24 @@
   text-transform: capitalize;
   font-style: italic;
   letter-spacing: 2px;
-  padding: 1rem 0;
+  padding: 1rem 0 0.5rem 0;
+}
+
+.h4-heading--bb {
+  margin-bottom: 1rem;
+}
+
+.h4-heading--bb::before {
+  position: absolute;
+  content: "";
+  width: 65%;
+  height: 3px;
+  background-color: var(--brand-color);
+  bottom: 0;
+
+  @include viewport-md {
+    width: 25%;
+  }
 }
 
 .h5-heading {
