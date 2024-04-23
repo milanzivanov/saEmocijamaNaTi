@@ -71,3 +71,23 @@
   font-weight: 800;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Caveat";
+  src: url("../fonts/Caveat/caveat-bold-webfont.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url("../fonts/Caveat/caveat-regular-webfont.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Caveat-brush";
+  src: url("../fonts/Caveat/caveatbrush-regular-webfont.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
